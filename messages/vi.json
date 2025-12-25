@@ -1,0 +1,1686 @@
+{
+  "ActionColumn": {
+    "delete": "Xóa",
+    "deleteConfirm": {
+      "error": "Xóa người dùng thất bại",
+      "message": "Bạn có chắc chắn muốn xóa người dùng này?",
+      "success": "Xóa người dùng thành công",
+      "title": "Xác nhận xóa"
+    },
+    "edit": "Chỉnh sửa",
+    "editDomain": "Chỉnh sửa domain",
+    "removeUser": "Xoá khỏi user này",
+    "removeUserError": "Đã xảy ra lỗi khi xoá khỏi user này",
+    "removeUserSuccess": "Xoá khỏi user này thành công",
+    "updateStatus": "Đã cập nhật trạng thái domain",
+    "updateStatusError": "Đã xảy ra lỗi khi cập nhật trạng thái domain",
+    "updateStatusSuccess": "Đã cập nhật trạng thái domain"
+  },
+  "ActionColumnService": {
+    "deleteConfirm": "Bạn có chắc chắn muốn xóa gói dịch vụ này không?",
+    "deleteFailed": "Đã xảy ra lỗi khi xoá gói dịch vụ",
+    "deleteSuccess": "Xóa gói dịch vụ thành công",
+    "deleteTitle": "Xóa gói dịch vụ"
+  },
+  "Admin": {
+    "addButton": "Thêm admin",
+    "admin": "Admin",
+    "columns": {
+      "account": "Tài khoản",
+      "createdAt": "Ngày tạo",
+      "role": "Vai trò",
+      "totalBudget": "Tổng ngân sách"
+    },
+    "create": {
+      "add": "Thêm",
+      "basicInfo": "Thông tin cơ bản",
+      "cancel": "Hủy",
+      "clearFilter": "Bỏ lọc",
+      "delete": "Xóa",
+      "edit": "Sửa",
+      "email": "Email",
+      "error": "Thêm admin thất bại",
+      "password": "Mật khẩu",
+      "role": "Vai trò",
+      "save": "Lưu",
+      "success": "Thêm admin thành công",
+      "title": "Thêm admin",
+      "username": "Tên đăng nhập"
+    },
+    "detail": "Chi tiết",
+    "edit": {
+      "error": "Cập nhật admin thất bại",
+      "success": "Cập nhật admin thành công",
+      "title": "Chỉnh sửa Admin"
+    },
+    "noData": {
+      "title": "Không tìm thấy Admin"
+    },
+    "search": {
+      "placeholder": "Tìm kiếm admin"
+    },
+    "title": "Quản lý Admin",
+    "validation": {
+      "password": {
+        "min": "Tên trên thẻ phải có ít nhất 3 ký tự",
+        "required": "Vui lòng nhập mật khẩu."
+      },
+      "role": {
+        "required": "Vui lòng chọn vai trò."
+      },
+      "username": {
+        "invalid": "Tên đăng nhập chỉ được chứa chữ cái và số.",
+        "required": "Vui lòng nhập tên đăng nhập."
+      }
+    }
+  },
+  "BasicInformation": {
+    "buttons": {
+      "cancel": "Hủy",
+      "save": "Lưu"
+    },
+    "fields": {
+      "bankName": "Tên ngân hàng",
+      "bankNameInCard": "Tên trên thẻ",
+      "bankNumber": "Số tài khoản",
+      "displayName": "Tên hiển thị",
+      "email": "Email",
+      "phone": "Số điện thoại",
+      "role": "Vai trò",
+      "telegramUsername": "Tên Telegram",
+      "totalBudget": "Tổng ngân sách",
+      "username": "Tên đăng nhập"
+    },
+    "title": "Thông tin cơ bản"
+  },
+  "ButtonWaitPayment": {
+    "title": "Số tiền đang chờ thanh toán:"
+  },
+  "Comment": {
+    "noComments": "Chưa có bình luận nào. Hãy là người đầu tiên bình luận!",
+    "title": "Bình luận"
+  },
+  "CommentForm": {
+    "placeholder": "Nhập bình luận",
+    "validation": {
+      "required": "Vui lòng nhập nội dung bình luận"
+    }
+  },
+  "CommentItem": {
+    "reply": "Trả lời",
+    "uploadImageError": "Tải ảnh lên thất bại"
+  },
+  "ConfirmUnsavedModal": {
+    "buttons": {
+      "keepEditing": "Tiếp tục chỉnh sửa",
+      "leave": "Rời đi"
+    },
+    "message": "Bạn có thay đổi chưa lưu sẽ bị mất nếu rời khỏi trang",
+    "title": "Thay đổi chưa lưu"
+  },
+  "ContactInformation": {
+    "bankNameInCard": "Tên trên thẻ ngân hàng",
+    "bankNumber": "Số tài khoản ngân hàng",
+    "cancel": "Hủy",
+    "edit": "Sửa",
+    "phone": "Số điện thoại",
+    "save": "Lưu",
+    "selectBank": "Chọn ngân hàng",
+    "telegramUsername": "Tên (Telegram)",
+    "title": "Thông tin liên hệ",
+    "usdt": "USDT (TRC20)",
+    "validation": {
+      "bankName": {
+        "required": "Tên ngân hàng là bắt buộc"
+      },
+      "bankNameInCard": {
+        "max": "Tên trên thẻ không được vượt quá 50 ký tự",
+        "min": "Tên trên thẻ phải có ít nhất 3 ký tự",
+        "required": "Tên trên thẻ là bắt buộc"
+      },
+      "bankNumber": {
+        "invalid": "Số tài khoản ngân hàng không hợp lệ",
+        "required": "Số tài khoản ngân hàng là bắt buộc"
+      },
+      "phone": {
+        "invalid": "Số điện thoại không hợp lệ",
+        "required": "Số điện thoại là bắt buộc"
+      },
+      "telegramUsername": {
+        "invalid": "Tên Telegram không hợp lệ",
+        "required": "Tên Telegram là bắt buộc"
+      }
+    }
+  },
+  "CopyButton": {
+    "error": "Không thể sao chép: ",
+    "success": "Đã sao chép vào clipboard!"
+  },
+  "CreateAdmin": {
+    "basicInfo": "Thông tin cơ bản",
+    "buttons": {
+      "add": "Thêm",
+      "cancel": "Hủy"
+    },
+    "fields": {
+      "email": "Email",
+      "password": "Mật khẩu",
+      "role": "Vai trò",
+      "username": "Tên đăng nhập"
+    },
+    "messages": {
+      "createError": "Tạo người dùng thất bại",
+      "createSuccess": "Tạo người dùng thành công"
+    },
+    "title": "Thêm người dùng",
+    "validation": {
+      "emailInvalid": "Email không hợp lệ",
+      "passwordMin": "Mật khẩu phải có ít nhất 6 ký tự",
+      "passwordRequired": "Vui lòng nhập mật khẩu",
+      "roleRequired": "Vui lòng chọn vai trò",
+      "usernameInvalid": "Tên đăng nhập không hợp lệ",
+      "usernameRequired": "Vui lòng nhập tên đăng nhập"
+    }
+  },
+  "CreateDomain": {
+    "buttons": {
+      "cancel": "Hủy",
+      "save": "Lưu"
+    },
+    "error": "Tạo miền thất bại",
+    "fields": {
+      "assignToTeam": "Gán cho team",
+      "basicInfo": "Thông tin cơ bản",
+      "budget": "Ngân sách",
+      "name": "Tên miền",
+      "selectTeam": "Chọn team",
+      "status": "Trạng thái",
+      "type": "Loại miền"
+    },
+    "success": "Tạo miền thành công",
+    "title": "Tạo miền mới",
+    "validation": {
+      "budgetInvalid": "Ngân sách không hợp lệ",
+      "budgetMax": "Ngân sách không được vượt quá 99,999,999,999",
+      "budgetRequired": "Ngân sách là bắt buộc",
+      "nameRequired": "Tên miền là bắt buộc",
+      "statusRequired": "Trạng thái là bắt buộc",
+      "typeRequired": "Loại miền là bắt buộc"
+    }
+  },
+  "CustomColumn": {
+    "columns": {
+      "createdAt": "Ngày tạo",
+      "numberOfClosedLoan": "Số khoản vay đã đóng",
+      "totalLoanFunded": "Tổng số tiền cho vay"
+    }
+  },
+  "DetailModal": {
+    "accountName": "Tên tài khoản",
+    "accountNumber": "Số tài khoản",
+    "additionalDiscount": "Giảm giá thêm",
+    "anchorText1": "Anchor Text 1",
+    "anchorText2": "Anchor Text 2",
+    "bankName": "Tên ngân hàng",
+    "buyer": "Người mua",
+    "buyerTelegram": "Telegram người mua",
+    "cancel": "Hủy",
+    "complimentaryServices": "Dịch vụ tặng kèm",
+    "contactTelegram": "Liên hệ Telegram",
+    "createdAt": "Ngày tạo",
+    "demoUrl": "Link demo",
+    "description": "Mô tả",
+    "detailService": "Chi tiết dịch vụ",
+    "discount": "Chiết khấu",
+    "domain": "Tên miền",
+    "edit": "Sửa",
+    "expiryDate": "Ngày hết hạn",
+    "finalPrice": "Giá cuối cùng",
+    "good": "Tốt",
+    "linkDrive": "Link Drive",
+    "messages": {
+      "billPaymentRequired": "Link thanh toán không được để trống!",
+      "updateBillPaymentError": "Cập nhật link thanh toán thất bại!",
+      "updateBillPaymentSuccess": "Cập nhật link thanh toán thành công!",
+      "updateLinkDriveError": "Cập nhật link drive thất bại!",
+      "updateLinkDriveSuccess": "Cập nhật link drive thành công!",
+      "updatePriceAdjustmentError": "Cập nhật điều chỉnh giá thất bại!",
+      "updatePriceAdjustmentSuccess": "Cập nhật điều chỉnh giá thành công!"
+    },
+    "metrics": {
+      "dr": "DR",
+      "organicTraffic": "Organic Traffic",
+      "referringDomains": "Referring Domains"
+    },
+    "newOrRenew": "Đặt mới hoặc gia hạn",
+    "note": "Ghi chú",
+    "orderCode": "Mã đơn hàng",
+    "orderDate": "Ngày đặt",
+    "orderInfo": "Thông tin đơn hàng",
+    "orderStatus": "Trạng thái đơn hàng",
+    "partner": "Đối tác",
+    "partnerInfo": "Thông tin đối tác",
+    "paymentBill": "Bill thanh toán",
+    "phone": "Số điện thoại",
+    "price": "Giá",
+    "priceAdjustment": "Điều chỉnh giá",
+    "priceAfterDiscount": "Giá sau chiết khấu",
+    "providerRating": "Đánh giá nhà cung cấp",
+    "quantity": "Số lượng",
+    "reviews": "Đánh giá",
+    "save": "Lưu",
+    "serviceInfo": "Thông tin dịch vụ",
+    "serviceName": "Tên dịch vụ",
+    "status": "Trạng thái",
+    "telegram": "Telegram",
+    "totalOrder": "Tổng tiền đơn hàng",
+    "type": "Loại",
+    "updatedAt": "Ngày cập nhật",
+    "url1": "URL 1",
+    "url2": "URL 2",
+    "warrantyPeriod": "Thời gian bảo hành"
+  },
+  "Domain": {
+    "columns": {
+      "actions": "Thao tác",
+      "assignment": "Người được asign doamin",
+      "budget": "Ngân sách",
+      "createdAt": "Ngày tạo",
+      "name": "Tên miền",
+      "status": "Trạng thái",
+      "team": "Team",
+      "teamMembers": "Thành viên team",
+      "type": "Loại miền",
+      "user": "Tên người dùng"
+    },
+    "createEdit": {
+      "buttons": {
+        "cancel": "Hủy",
+        "save": "Lưu"
+      },
+      "createForTeam": "Tạo domain cho team",
+      "createTitle": "Thêm tên miền mới",
+      "editTitle": "Chỉnh sửa tên miền",
+      "labels": {
+        "assignedUser": "Người được gán",
+        "budget": "Ngân sách",
+        "name": "Tên miền",
+        "selectUser": "Chọn người dùng",
+        "status": "Trạng thái",
+        "type": "Loại miền"
+      },
+      "messages": {
+        "createSuccess": "Tạo tên miền thành công",
+        "deleteMessage": "Xóa domain sẽ ảnh hưởng đến các đơn hàng chưa hoàn thành! Bạn có chắc chắn muốn xóa domain này không?",
+        "deleteTitle": "Xóa tên miền",
+        "serverError": "Lỗi máy chủ",
+        "updateSuccess": "Cập nhật tên miền thành công"
+      },
+      "validation": {
+        "budgetInvalid": "Chỉ được nhập số",
+        "budgetMax": "Số tiền quá lớn",
+        "budgetRequired": "Vui lòng nhập ngân sách cho miền",
+        "nameRequired": "Vui lòng nhập tên miền",
+        "statusRequired": "Vui lòng chọn trạng thái miền",
+        "typeRequired": "Vui lòng chọn loại miền"
+      }
+    },
+    "messages": {
+      "noTeamAssigned": "Chưa gán team"
+    },
+    "search": {
+      "clearFilter": "Bỏ lọc",
+      "filterByTeam": "Lọc theo nhóm...",
+      "noDomainsForTeamLeader": "Không có domain nào thuộc teams mà bạn là leader",
+      "placeholder": "Nhập tên miền...",
+      "status": "Trạng thái",
+      "title": "Tìm kiếm tên miền"
+    },
+    "title": "Quản lý tên miền"
+  },
+  "Domains": {
+    "domain": "miền",
+    "list": "Danh sách"
+  },
+  "EditAdmin": {
+    "basicInfo": "Thông tin cơ bản",
+    "buttons": {
+      "cancel": "Hủy",
+      "save": "Lưu"
+    },
+    "cancel": "Hủy",
+    "email": "Email",
+    "fields": {
+      "email": "Email",
+      "password": "Mật khẩu",
+      "role": "Vai trò",
+      "username": "Tên đăng nhập"
+    },
+    "messages": {
+      "updateError": "Cập nhật người dùng thất bại",
+      "updateSuccess": "Cập nhật người dùng thành công"
+    },
+    "password": "Mật khẩu",
+    "role": "Vai trò",
+    "save": "Lưu",
+    "title": "Chỉnh sửa người dùng",
+    "username": "Tên đăng nhập"
+  },
+  "EditDomain": {
+    "buttons": {
+      "cancel": "Hủy",
+      "save": "Lưu"
+    },
+    "fields": {
+      "assignToTeam": "Gán cho team",
+      "basicInfo": "Thông tin cơ bản",
+      "budget": "Ngân sách",
+      "name": "Tên miền",
+      "selectTeam": "Chọn team",
+      "status": "Trạng thái",
+      "type": "Loại miền"
+    },
+    "messages": {
+      "editError": "Cập nhật miền thất bại",
+      "editSuccess": "Cập nhật miền thành công"
+    },
+    "title": "Chỉnh sửa miền",
+    "validation": {
+      "budgetInvalid": "Ngân sách không hợp lệ",
+      "budgetMax": "Ngân sách không được vượt quá 99,999,999,999",
+      "budgetRequired": "Ngân sách là bắt buộc",
+      "nameRequired": "Tên miền là bắt buộc",
+      "statusRequired": "Trạng thái là bắt buộc",
+      "typeRequired": "Loại miền là bắt buộc"
+    }
+  },
+  "FileUpload": {
+    "defaultLabel": "Chọn tệp để tải lên",
+    "errors": {
+      "fileSizeExceeded": "Kích thước file không được vượt quá {maxSize}MB"
+    },
+    "previewAlt": "Tệp đã chọn",
+    "removeFile": "Xóa tệp"
+  },
+  "Footer": {
+    "about": "Về chúng tôi",
+    "aboutLinks": {
+      "benefits": "→ Lợi ích khi tham gia 69VN",
+      "blacklist": "→ Danh sách đen đối tác 69VN",
+      "recruitmentContent": "→ Tuyển dụng cộng tác viên nội dung: @hanii0802",
+      "recruitmentTraffic": "→ Tuyển dụng Traffic: @team69support",
+      "terms": "→ Điều khoản & Điều kiện"
+    },
+    "contact": "Liên hệ",
+    "copyright": "Bản quyền ©2023 Đã đăng ký 69VN",
+    "description": "CRM giúp quản lý SEO một cách chuyên nghiệp, giữ mọi dữ liệu và quy trình ở cùng một nơi để đội nhóm làm việc rõ ràng và có tổ chức. Hệ thống này còn tạo cầu nối cho cộng đồng SEO, giúp mọi người trao đổi kinh nghiệm, chia sẻ chiến lược và hỗ trợ nhau phát triển bền vững.",
+    "downloadApp": "Tải ứng dụng",
+    "help": "Trợ giúp",
+    "helpLinks": {
+      "orderIssues": "Vấn đề đơn hàng: seoteam69vn",
+      "paymentIssues": "Vấn đề thanh toán:"
+    },
+    "joinGroup": "Tham gia nhóm để nhận thông tin cập nhật mới nhất từ chúng tôi:"
+  },
+  "Header": {
+    "auth": {
+      "dashboard": "BẢNG ĐIỀU KHIỂN",
+      "signIn": "ĐĂNG NHẬP"
+    },
+    "cart": {
+      "empty": "Giỏ hàng trống",
+      "title": "Giỏ hàng"
+    },
+    "logo": "SEO MARKET",
+    "logout": "Đăng xuất",
+    "nav": {
+      "guide": "Hướng dẫn",
+      "guideLinks": {
+        "enterprise": "Doanh nghiệp",
+        "hobby": "Sở thích",
+        "individual": "Cá nhân",
+        "team": "Nhóm"
+      },
+      "home": "Trang chủ",
+      "software": "Phần mềm",
+      "softwareLinks": {
+        "branding": "Xây dựng Thương hiệu",
+        "interfaceDesign": "Thiết kế Giao diện",
+        "seo": "SEO",
+        "webDev": "Phát triển Web"
+      }
+    },
+    "settings": "Cài đặt"
+  },
+  "HomePage": {
+    "benefitSection": {
+      "items": {
+        "manyPartners": "Có nhiều đối tác để lựa chọn",
+        "noFee": "Không mất phí khi tham gia",
+        "reliablePartners": "Các đối tác uy tín với chất lượng dịch vụ và giá cả hợp lý",
+        "securePayment": "Thanh toán nhanh chóng, đa dạng, an toàn và bảo mật"
+      },
+      "title1": "Tìm kiếm dịch vụ SEO web",
+      "title2": "không còn là khó khăn"
+    },
+    "hero": {
+      "cta": "Tham gia nhóm để nhận thông tin cập nhật mới nhất từ chúng tôi:",
+      "stats": {
+        "orders": "đơn hàng mới mỗi ngày",
+        "signups": "đăng ký hàng ngày",
+        "transactions": "triệu giao dịch hàng ngày"
+      },
+      "subtitle": "Nhận lưu lượng truy cập hữu cơ và thứ hạng cao với sự hợp tác đa nhóm giúp bạn tối ưu hóa SEO on-page và off-page.",
+      "title": "Làm cho chiến dịch SEO của bạn thành công"
+    },
+    "ratingSection": {
+      "ratings": {
+        "agency": "Agency",
+        "blogger": "Blogger",
+        "comment1": "Tuyệt vời! Hệ thống đơn giản và dễ sử dụng. Tôi không mất nhiều thời gian để làm quen, mọi thứ rất trực quan",
+        "comment10": "Hiệu suất tăng rõ rệt sau khi sử dụng dịch vụ. Nhờ vào chiến lược tối ưu mà chiến dịch quảng cáo.",
+        "comment11": "Trải nghiệm người dùng được cải thiện rõ rệt. Thiết kế đẹp, tinh tế, tối ưu cho cả desktop lẫn mobile. Không còn gì để chê.",
+        "comment12": "Dịch vụ rất đáng tin cậy. Đội ngũ hiểu rõ nhu cầu khách hàng và cung cấp giải pháp phù hợp. Thời gian phản hồi nhanh chóng.",
+        "comment13": "Tuyệt vời! Hệ thống đơn giản và dễ sử dụng. Tôi không mất nhiều thời gian để làm quen, mọi thứ rất trực quan",
+        "comment14": "Dịch vụ nhanh, hỗ trợ tận tình! Đội ngũ tư vấn rất thân thiện và chuyên nghiệp. Mình cảm thấy yên tâm khi hợp tác.",
+        "comment15": "Sẽ quay lại lần sau! Giá cả hợp lý, chất lượng vượt mong đợi. Đặc biệt ấn tượng với khả năng nắm bắt nhu cầu khách hàng.",
+        "comment16": "Ổn áp, trải nghiệm mượt mà! Giao diện đẹp, dễ dùng. Nội dung trình bày khoa học, hỗ trợ tốt cho công việc viết lách của mình.",
+        "comment17": "Đáng tiền, chất lượng cao. Sau khi sử dụng dịch vụ, thứ hạng từ khóa đã cải thiện rõ rệt. Hài lòng với kết quả đạt được.",
+        "comment18": "Hiệu suất tăng rõ rệt sau khi sử dụng dịch vụ. Nhờ vào chiến lược tối ưu mà chiến dịch quảng cáo.",
+        "comment19": "Nội dung sáng tạo, đúng ý tưởng. Rất hài lòng với phong cách làm việc nghiêm túc và sáng tạo. Tốc độ hoàn thành cũng rất nhanh.",
+        "comment2": "Dịch vụ nhanh, hỗ trợ tận tình! Đội ngũ tư vấn rất thân thiện và chuyên nghiệp. Mình cảm thấy yên tâm khi hợp tác.",
+        "comment20": "Thiết kế sáng tạo và chuyên nghiệp. Mình rất ưng ý với sản phẩm cuối cùng. Nhìn là thấy sự đầu tư tâm huyết trong từng chi tiết.",
+        "comment21": "Mình rất hài lòng với dịch vụ của bạn. Đội ngũ tư vấn rất thân thiện và chuyên nghiệp. Mình cảm thấy yên tâm khi hợp tác.",
+        "comment22": "Sẽ quay lại lần sau! Giá cả hợp lý, chất lượng vượt mong đợi. Đặc biệt ấn tượng với khả năng nắm bắt nhu cầu khách hàng.",
+        "comment3": "Sẽ quay lại lần sau! Giá cả hợp lý, chất lượng vượt mong đợi. Đặc biệt ấn tượng với khả năng nắm bắt nhu cầu khách hàng.",
+        "comment4": "Ổn áp, trải nghiệm mượt mà! Giao diện đẹp, dễ dùng. Nội dung trình bày khoa học, hỗ trợ tốt cho công việc viết lách của mình.",
+        "comment5": "Đáng tiền, chất lượng cao. Sau khi sử dụng dịch vụ, thứ hạng từ khóa đã cải thiện rõ rệt. Hài lòng với kết quả đạt được.",
+        "comment6": "Hiệu suất tăng rõ rệt sau khi sử dụng dịch vụ. Nhờ vào chiến lược tối ưu mà chiến dịch quảng cáo.",
+        "comment7": "Nội dung sáng tạo, đúng ý tưởng. Rất hài lòng với phong cách làm việc nghiêm túc và sáng tạo. Tốc độ hoàn thành cũng rất nhanh.",
+        "comment8": "Rất chuyên nghiệp và hiệu quả. Hệ thống báo cáo chi tiết, minh bạch giúp mình theo dõi dễ dàng. Hỗ trợ khách hàng cực kỳ tốt.",
+        "comment9": "Nội dung sáng tạo, đúng ý tưởng. Rất hài lòng với phong cách làm việc nghiêm túc và sáng tạo. Tốc độ hoàn thành cũng rất nhanh.",
+        "contentStrategist": "Content Strategist",
+        "copywriter": "Copywriter",
+        "digitalMarketer": "Digital Marketer",
+        "freelancer": "Freelancer",
+        "graphicDesigner": "Graphic Designer",
+        "marketer": "Marketer",
+        "seoExpert": "SEO Expert",
+        "uxDesigner": "UX Designer"
+      },
+      "subtitle": "Nhận được 4.8/5 sao trong hơn 10.000 lượt đánh giá.",
+      "title": "Đánh giá"
+    },
+    "title": "Xin chào!"
+  },
+  "Login": {
+    "email": {
+      "label": "Email",
+      "required": "Vui lòng nhập email.",
+      "invalid": "Email không hợp lệ."
+    },
+    "errors": {
+      "invalidCredentials": "Email hoặc mật khẩu không chính xác",
+      "serverError": "Lỗi máy chủ"
+    },
+    "password": {
+      "label": "Mật khẩu",
+      "required": "Vui lòng nhập mật khẩu."
+    },
+    "submit": "ĐĂNG NHẬP",
+    "title": "ĐĂNG NHẬP"
+  },
+  "ModalEditOrder": {
+    "buttons": {
+      "cancel": "Hủy",
+      "confirm": "Xác nhận"
+    },
+    "confirmPopup": {
+      "message": "Bạn chắc chắn đơn hàng này đã hoàn thành. Bạn không thể hoàn tác lại trạng thái đơn hàng sau khi đã xác nhận.",
+      "title": "Xác nhận"
+    },
+    "fileInput": {
+      "error": "Vui lòng chọn một file để tải lên.",
+      "label": "Chọn tệp để cập nhật"
+    },
+    "messages": {
+      "updateSuccess": "Trạng thái đơn hàng đã được cập nhật"
+    },
+    "title": "Xác nhận đơn hàng"
+  },
+  "MyCart": {
+    "actions": {
+      "delete": "Xóa",
+      "viewDetails": "Xem chi tiết"
+    },
+    "columns": {
+      "discount": "Chiết khấu",
+      "finalTotal": "Tổng tiền sau chiết khấu",
+      "price": "Giá",
+      "quantity": "Số lượng",
+      "serviceName": "Tên dịch vụ",
+      "serviceType": "Loại dịch vụ",
+      "totalPrice": "Tổng tiền"
+    },
+    "delete": {
+      "failed": "Đã xảy ra lỗi khi xoá thông tin giỏ hàng!",
+      "success": "Xoá thông tin giỏ hàng thành công!"
+    },
+    "empty": {
+      "message": "",
+      "title": "Giỏ hàng rỗng"
+    },
+    "modal": {
+      "detailTitle": "Chi tiết Giỏ hàng",
+      "orderDetails": "Chi tiết đơn hàng",
+      "serviceDetails": "Chi tiết dịch vụ"
+    },
+    "order": {
+      "failed": "Đặt hàng thất bại!",
+      "placeOrder": "Đặt hàng",
+      "selectAtLeastOne": "Vui lòng chọn ít nhất 1 dịch vụ để đặt hàng!",
+      "success": "Đặt hàng thành công!",
+      "totalPayment": "Tổng thanh toán:"
+    },
+    "title": "Giỏ hàng của bạn"
+  },
+  "MyOrder": {
+    "actions": {
+      "orderDetails": "Chi tiết đơn hàng"
+    },
+    "columns": {
+      "actions": "Thao tác",
+      "additionalDiscount": "Giảm giá thêm",
+      "discount": "Chiết khấu",
+      "domainBudget": "Ngân sách tên miền",
+      "domainName": "Tên miền",
+      "domainSeo": "Domain Seo",
+      "expiredAt": "Ngày hết hạn",
+      "finalTotal": "Tổng tiền sau  chiết khấu",
+      "orderCode": "Mã đơn hàng",
+      "partner": "Đối tác",
+      "price": "Giá",
+      "quantity": "Số lượng",
+      "service": "Dịch vụ",
+      "serviceName": "Tên dịch vụ",
+      "serviceType": "Loại dịch vụ",
+      "status": "Trạng thái đơn hàng",
+      "time": "Thời gian",
+      "total": "Tổng tiền"
+    },
+    "modal": {
+      "detailTitle": "Chi tiết đơn hàng",
+      "serviceDetails": "Chi tiết dịch vụ"
+    },
+    "search": {
+      "clearFilter": "Bỏ lọc",
+      "orderCodePlaceholder": "Mã đơn hàng",
+      "orderDate": "Ngày đặt đơn",
+      "statusPlaceholder": "Trạng thái",
+      "title": "Quản lý đơn hàng"
+    },
+    "title": "Đơn hàng của tôi"
+  },
+  "MyProfile": {
+    "ContactInformation": {
+      "bankName": "Tên ngân hàng",
+      "bankNameInCard": "Tên trên thẻ ngân hàng",
+      "bankNumber": "Số tài khoản",
+      "cancel": "Hủy",
+      "edit": "Chỉnh sửa",
+      "phone": "Số điện thoại",
+      "save": "Lưu",
+      "selectBank": "Chọn ngân hàng",
+      "telegramUsername": "Tên (Telegram)",
+      "title": "Thông tin liên hệ",
+      "usdt": "USDT (TRC20)",
+      "validation": {
+        "bankName": {
+          "required": "Tên ngân hàng là bắt buộc"
+        },
+        "bankNameInCard": {
+          "max": "Tên trên thẻ không được vượt quá 50 ký tự",
+          "min": "Tên trên thẻ phải có ít nhất 3 ký tự",
+          "required": "Tên trên thẻ là bắt buộc"
+        },
+        "bankNumber": {
+          "invalid": "Số tài khoản ngân hàng không hợp lệ",
+          "required": "Số tài khoản ngân hàng là bắt buộc"
+        },
+        "phone": {
+          "invalid": "Số điện thoại không hợp lệ",
+          "required": "Số điện thoại là bắt buộc"
+        },
+        "telegramUsername": {
+          "invalid": "Tên Telegram không hợp lệ",
+          "required": "Tên Telegram là bắt buộc"
+        }
+      }
+    },
+    "basicInfo": {
+      "displayName": "Tên hiển thị",
+      "email": "Email",
+      "role": "Vai trò",
+      "title": "Thông tin cơ bản",
+      "totalBudget": "Tổng ngân sách",
+      "username": "Tên đăng nhập"
+    },
+    "common": {
+      "cancel": "Hủy",
+      "delete": "Xóa",
+      "edit": "Chỉnh sửa",
+      "save": "Lưu"
+    },
+    "contactInfo": {
+      "bankName": "Tên ngân hàng",
+      "bankNameInCard": "Tên chủ tài khoản",
+      "bankNumber": "Số tài khoản",
+      "phone": "Số điện thoại",
+      "selectBank": "Chọn ngân hàng",
+      "telegramUsername": "Tên người dùng Telegram",
+      "title": "Thông tin liên hệ",
+      "usdt": "Địa chỉ USDT"
+    },
+    "copyButton": {
+      "error": "Sao chép thất bại",
+      "success": "Sao chép thành công"
+    },
+    "messages": {
+      "avatarUpdateFailed": "Cập nhật ảnh đại diện thất bại",
+      "avatarUpdateSuccess": "Cập nhật ảnh đại diện thành công",
+      "updateFailed": "Cập nhật thông tin thất bại",
+      "updateSuccess": "Cập nhật thông tin thành công"
+    },
+    "password": {
+      "cancel": "Hủy",
+      "confirmPassword": "Xác nhận mật khẩu",
+      "error": "Cập nhật mật khẩu thất bại",
+      "failed": "Cập nhật mật khẩu thất bại",
+      "newPassword": "Mật khẩu mới",
+      "oldPassword": "Mật khẩu cũ",
+      "save": "Lưu",
+      "success": "Cập nhật mật khẩu thành công",
+      "title": "Cập nhật mật khẩu"
+    },
+    "seoerStatistic": {
+      "title": "Thống kê SEOer",
+      "totalSpent": "Tổng tiền đã order"
+    },
+    "title": "Thông tin cá nhân",
+    "update": {
+      "error": "Cập nhật thông tin thất bại",
+      "success": "Cập nhật thông tin thành công"
+    }
+  },
+  "Order": {
+    "cancel": "Hủy",
+    "changeStatus": "Thay đổi trạng thái thành công",
+    "confirm": "Xác nhận",
+    "updatePriceAdjustment": "Chỉnh sửa giá",
+    "updateStatus": "Cập nhập trạng thái",
+    "viewDetails": "Xem chi tiết"
+  },
+  "OrderHistory": {
+    "actions": {
+      "collapse": "Thu gọn",
+      "expand": "Xem chi tiết"
+    },
+    "descriptions": {
+      "CHANGE_STATUS": "Trạng thái thay đổi từ {before} sang {after}",
+      "CREATE_ORDER": "Đơn hàng được tạo thành công",
+      "PRICE_ADJUSTMENT": "Giá điều chỉnh từ {before} sang {after}",
+      "REMOVE_ORDER_DETAIL": "Đã xóa chi tiết đơn hàng"
+    },
+    "empty": {
+      "message": "Đơn hàng này chưa có hoạt động nào được ghi lại",
+      "title": "Chưa có lịch sử"
+    },
+    "labels": {
+      "priceAdjustFrom": "Giá điều chỉnh từ",
+      "statusChangeFrom": "Trạng thái thay đổi từ",
+      "to": "sang"
+    },
+    "loading": "Đang tải lịch sử...",
+    "pagination": {
+      "activities": "hoạt động",
+      "showing": "Hiển thị {start} - {end} trong {total} kết quả"
+    },
+    "title": "Lịch sử đơn hàng",
+    "types": {
+      "CHANGE_STATUS": "Thay đổi trạng thái",
+      "CREATE_ORDER": "Tạo đơn hàng",
+      "PRICE_ADJUSTMENT": "Điều chỉnh giá",
+      "REMOVE_ORDER_DETAIL": "Xóa chi tiết đơn hàng"
+    }
+  },
+  "OrderModal": {
+    "buttons": {
+      "cancel": "Hủy",
+      "confirm": "Xác nhận"
+    },
+    "fields": {
+      "anchorText1": "Anchor Text1",
+      "anchorText2": "Anchor Text2",
+      "discount": "Chiết khấu",
+      "expiredAt": "Ngày hết hạn",
+      "finalTotal": "Tổng tiền sau chiết khấu",
+      "linkDrive": "Link Drive",
+      "newOrRenew": "Đặt mới hoặc gia hạn",
+      "orderAt": "Thời gian đặt",
+      "price": "Giá",
+      "quantity": "Số lượng",
+      "serviceName": "Tên dịch vụ",
+      "serviceType": "Loại dịch vụ",
+      "totalPrice": "Tổng tiền",
+      "url1": "Url 1",
+      "url2": "Url 2",
+      "warrantyPeriod": "Thời gian bảo hành"
+    },
+    "title": "Đặt hàng",
+    "validation": {
+      "anchorText1Required": "Vui lòng nhập anchor text 1",
+      "anchorText2Required": "Vui lòng nhập anchor text 2",
+      "invalidUrl": "URL không hợp lệ",
+      "invalidUrlFormat": "URL không đúng định dạng",
+      "url1Required": "Vui lòng nhập url 1",
+      "url2Required": "Vui lòng nhập url 2"
+    }
+  },
+  "Orders": {
+    "columns": {
+      "actions": "Thao tác",
+      "discount": "Chiết khấu",
+      "domainName": "Tên miền",
+      "orderCode": "Mã đơn hàng",
+      "price": "Giá",
+      "priceAdjustment": "Điều chỉnh giá",
+      "quantity": "Số lượng",
+      "serviceName": "Tên dịch vụ",
+      "serviceType": "Loại dịch vụ",
+      "status": "Trạng thái",
+      "team": "Team",
+      "totalPrice": "Tổng tiền sau giảm giá",
+      "userOrder": "Người đặt hàng",
+      "username": "Tên người dùng"
+    },
+    "deleteConfirm": {
+      "error": "Xóa đơn hàng thất bại",
+      "message": "Bạn có chắc chắn muốn xóa đơn hàng này không?",
+      "success": "Xóa đơn hàng thành công",
+      "title": "Xác nhận xóa"
+    },
+    "detail": {
+      "serviceDetails": "Chi tiết dịch vụ",
+      "title": "Chi tiết đơn hàng"
+    },
+    "filters": {
+      "clearFilters": "Bỏ lọc",
+      "dateRange": "Khoảng thời gian",
+      "status": "Trạng thái"
+    },
+    "list": "Danh sách",
+    "order": "đơn hàng",
+    "search": {
+      "filterByTeam": "Lọc theo nhóm...",
+      "orderCodePlaceholder": "Mã đơn hàng..."
+    },
+    "summary": {
+      "totalApprovedCost": "Tổng chi phí"
+    },
+    "table": {
+      "noData": "Không tìm thấy đơn hàng"
+    },
+    "title": "Quản lý đơn hàng"
+  },
+  "Pack": {
+    "addCart": {
+      "actions": {
+        "addToCart": "Thêm vào giỏ hàng",
+        "cancel": "Hủy"
+      },
+      "complimentary": {
+        "title": "Dịch vụ tặng kèm"
+      },
+      "errors": {
+        "invalidQuantity": "Vui lòng nhập số lượng hợp lệ",
+        "systemOverload": "Hệ thống đang quá tải"
+      },
+      "quantity": {
+        "positive": "Số lượng phải lớn hơn 0",
+        "required": "Vui lòng nhập số lượng"
+      },
+      "serviceInfo": {
+        "name": "Tên dịch vụ:",
+        "price": "Giá:",
+        "quantity": "Số lượng:",
+        "title": "Thông tin dịch vụ",
+        "type": "Loại dịch vụ:"
+      },
+      "title": "Thêm dịch vụ vào giỏ hàng",
+      "total": {
+        "discount": "Chiết khấu:",
+        "total": "Tổng tiền:"
+      }
+    },
+    "columns": {
+      "actions": "Thao tác",
+      "demoLink": "Link demo",
+      "discount": "Chiết khấu",
+      "final": "Giá sau chiết khấu",
+      "name": "Tên gói",
+      "note": "Ghi chú",
+      "partner": "Đối tác",
+      "price": "Giá",
+      "serviceType": "Loại Dịch vụ"
+    },
+    "createEdit": {
+      "buttons": {
+        "cancel": "Hủy",
+        "submit": "Đăng ngay"
+      },
+      "createTitle": "Thêm gói dịch vụ mới",
+      "editTitle": "Chỉnh sửa gói dịch vụ",
+      "labels": {
+        "addComplimentary": "Thêm dịch vụ tặng kèm",
+        "bannerDuration": "Thời hạn",
+        "bannerNote": "Ghi chú",
+        "bannerPrice": "Giá Banner / Cái",
+        "bannerPriceNew": "Giá mới",
+        "complimentary": "Dịch vụ tặng kèm",
+        "demoUrl": "Link demo",
+        "discount": "Giảm giá",
+        "discountAmount": "Số tiền giảm",
+        "discountBannerService": "Giảm giá",
+        "discountBannerServiceAmount": "Số tiền giảm Banner",
+        "discountGuestPostService": "Giảm giá",
+        "discountGuestPostServiceAmount": "Số tiền giảm GuestPost",
+        "discountTextLinkService": "Giảm giá",
+        "discountTextLinkServiceAmount": "Số tiền giảm TextLink",
+        "guestPostNote": "Ghi chú",
+        "guestPostPrice": "Giá Guest Post (VND)",
+        "guestPostPriceNew": "Giá mới",
+        "isFollowGuestPost": "Guest Post cần follow",
+        "isFollowTextLink": "Text Link cần follow",
+        "isFooterTextLink": "Text Link cần footer",
+        "isHomeTextLink": "Text Link cần home",
+        "isIndexBanner": "Banner cần index",
+        "isIndexGuestPost": "Guest Post cần index",
+        "name": "Tên gói",
+        "newPrice": "Giá mới",
+        "note": "Ghi chú",
+        "price": "Giá cả",
+        "saleBanner": "Bán Banner",
+        "saleGuestPost": "Bán GuestPost",
+        "saleTextLink": "Bán TextLink",
+        "serviceType": "Loại dịch vụ",
+        "showOnMarket": "Hiển thị lên sàn",
+        "textLinkDuration": "Thời hạn (ngày)",
+        "textLinkNote": "Ghi chú",
+        "textLinkPrice": "Giá Text Link (VND)",
+        "textLinkPriceNew": "Giá mới"
+      },
+      "messages": {
+        "createSuccess": "Tạo gói dịch vụ thành công",
+        "serverError": "server lỗi",
+        "updateSuccess": "Cập nhật gói dịch vụ thành công"
+      },
+      "validation": {
+        "complimentaryRequired": "Vui lòng nhập tên dịch vụ tặng kèm.",
+        "demoRequired": "Vui lòng nhập link demo.",
+        "discountMax": "Số tiền giảm không được lớn hơn giá gốc",
+        "discountMaxPrice": "Số tiền giảm không được vượt quá",
+        "discountMin": "Số tiền giảm phải >= 0",
+        "nameRequired": "Vui lòng nhập tên gói dịch vụ.",
+        "priceInvalid": "Vui lòng nhập giá hợp lệ",
+        "priceMax": "Giá không được vượt quá",
+        "priceMin": "Giá phải >= 0",
+        "priceRequired": "Vui lòng nhập giá",
+        "typeRequired": "Vui lòng chọn loại gói dịch vụ."
+      }
+    },
+    "detail": {
+      "title": "Chi tiết gói dịch vụ"
+    },
+    "price": {
+      "discount": "Chiết khấu:",
+      "final": "Giá sau chiết khấu:",
+      "original": "Giá:"
+    },
+    "search": {
+      "button": "Đăng ký gói dịch vụ",
+      "clearFilter": "Bỏ lọc",
+      "partner": "Đối tác",
+      "placeholder": "Nhập tên gói dịch vụ...",
+      "service": "Dịch vụ",
+      "serviceStatus": "Trạng thái dịch vụ",
+      "serviceType": "Loại dịch vụ",
+      "status": "Trạng thái",
+      "title": "Tìm kiếm gói dịch vụ"
+    },
+    "title": "Gói dịch vụ"
+  },
+  "Partner": {
+    "addCart": {
+      "actions": {
+        "addToCart": "Thêm vào giỏ hàng",
+        "cancel": "Hủy"
+      },
+      "complimentary": {
+        "title": "Dịch vụ tặng kèm"
+      },
+      "errors": {
+        "invalidQuantity": "Vui lòng nhập số lượng hợp lệ",
+        "systemOverload": "Hệ thống đang quá tải"
+      },
+      "quantity": {
+        "positive": "Số lượng phải lớn hơn 0",
+        "required": "Vui lòng nhập số lượng"
+      },
+      "serviceInfo": {
+        "name": "Tên dịch vụ:",
+        "price": "Giá:",
+        "quantity": "Số lượng:",
+        "title": "Thông tin dịch vụ",
+        "type": "Loại dịch vụ:"
+      },
+      "title": "Thêm dịch vụ vào giỏ hàng",
+      "total": {
+        "discount": "Chiết khấu:",
+        "total": "Tổng tiền:"
+      }
+    },
+    "banner": {
+      "description": "69vn Marketing đóng vai trò trung gian giúp bạn đảm bảo quyền lợi khi mua bán Guestpost, tránh các trường hợp lừa đảo hoặc backlink bị gỡ trước thời hạn...",
+      "title": "Guest Post/Textlink/Banner Marketplace"
+    },
+    "domain": {
+      "columns": {
+        "actions": "Thao tác",
+        "bannerPrice": "Giá Banner (VND)",
+        "dr": "DR (Ahrefs)",
+        "guestPostPrice": "Giá Guest Post (VND)",
+        "name": "Tên dịch vụ",
+        "organicTraffic": "Organic Traffic",
+        "partner": "Đối tác",
+        "refDomain": "Reference Domains",
+        "status": "Trạng thái",
+        "textLinkPrice": "Giá Text Link (VND)"
+      },
+      "createEdit": {
+        "buttons": {
+          "cancel": "Hủy",
+          "submit": "Đăng ngay"
+        },
+        "createTitle": "Thêm dịch vụ mới GUESTPOST - TEXTLINK - BANNER",
+        "editTitle": "Chỉnh sửa domain",
+        "labels": {
+          "addComplimentary": "Thêm dịch vụ tặng kèm",
+          "bannerDuration": "Thời hạn Banner",
+          "bannerNote": "Ghi chú Banner",
+          "bannerPrice": "Giá Banner",
+          "bannerPriceNew": "Giá mới Banner",
+          "billPaymentLink": "Link thanh toán",
+          "billPaymentLinkPlaceholder": "Nhập link thanh toán",
+          "billPaymentLinkRequired": "Vui lòng nhập link thanh toán",
+          "complimentary": "Dịch vụ tặng kèm",
+          "deleteComplimentary": "Xóa dịch vụ tặng kèm",
+          "discount": "Giảm giá",
+          "discountAmount": "Số tiền giảm",
+          "discountBanner": "Banner giảm giá",
+          "discountBannerAmount": "Số tiền giảm Banner",
+          "discountBannerService": "Banner giảm giá",
+          "discountBannerServiceAmount": "Số tiền giảm Banner",
+          "discountGuestPost": "GuestPost giảm giá",
+          "discountGuestPostAmount": "Số tiền giảm GuestPost",
+          "discountGuestPostService": "GuestPost giảm giá",
+          "discountGuestPostServiceAmount": "Số tiền giảm GuestPost",
+          "discountTextLink": "TextLink giảm giá",
+          "discountTextLinkAmount": "Số tiền giảm TextLink",
+          "discountTextLinkService": "TextLink giảm giá",
+          "discountTextLinkServiceAmount": "Số tiền giảm TextLink",
+          "dofollowBanner": "Banner cần follow",
+          "dofollowGuestPost": "GuestPost cần follow",
+          "dofollowTextLink": "TextLink cần follow",
+          "domain": "Nhập domain",
+          "dr": "Domain Rating (DR)",
+          "field": "Chọn lĩnh vực",
+          "footerTextLink": "TextLink footer",
+          "guestPostNote": "Ghi chú GuestPost",
+          "guestPostPrice": "Giá GuestPost",
+          "guestPostPriceNew": "Giá mới GuestPost",
+          "homeTextLink": "TextLink home",
+          "indexBanner": "Banner cần index",
+          "indexGuestPost": "GuestPost cần index",
+          "indexTextLink": "TextLink cần index",
+          "isFollowGuestPost": "GuestPost cần follow",
+          "isFollowTextLink": "TextLink cần follow",
+          "isFooterTextLink": "TextLink footer",
+          "isHomeTextLink": "TextLink home",
+          "isIndexBanner": "Banner cần index",
+          "isIndexGuestPost": "GuestPost cần index",
+          "isIndexTextLink": "TextLink cần index",
+          "linkDrive": "Link Drive",
+          "newPrice": "Giá mới",
+          "noIndexBanner": "Banner không cần index",
+          "noIndexGuestPost": "GuestPost không cần index",
+          "noIndexTextLink": "TextLink không cần index",
+          "nofollowBanner": "Banner không cần follow",
+          "nofollowGuestPost": "GuestPost không cần follow",
+          "nofollowTextLink": "TextLink không cần follow",
+          "organicTraffic": "Organic Traffic",
+          "refDomain": "Reference Domains",
+          "saleBanner": "Bán Banner",
+          "saleGuestPost": "Bán GuestPost",
+          "saleTextLink": "Bán TextLink",
+          "showOnMarket": "Hiển thị lên sàn",
+          "textLinkDuration": "Thời hạn TextLink",
+          "textLinkNote": "Ghi chú TextLink",
+          "textLinkPrice": "Giá TextLink",
+          "textLinkPriceNew": "Giá mới TextLink"
+        },
+        "messages": {
+          "createSuccess": "Tạo dịch vụ thành công",
+          "serverError": "server lỗi",
+          "updateSuccess": "Cập nhật dịch vụ thành công"
+        },
+        "validation": {
+          "complimentaryRequired": "Vui lòng nhập tên dịch vụ tặng kèm.",
+          "discountMax": "Số tiền giảm không được lớn hơn giá gốc",
+          "discountMaxPrice": "Số tiền giảm không được vượt quá",
+          "discountMin": "Số tiền giảm phải >= 0",
+          "domainInvalid": "Domain không hợp lệ",
+          "domainRequired": "Vui lòng nhập domain.",
+          "durationRequired": "Vui lòng chọn thời hạn",
+          "fieldRequired": "Vui lòng chọn lĩnh vực.",
+          "priceInvalid": "Vui lòng nhập giá hợp lệ",
+          "priceMax": "Giá không được vượt quá",
+          "priceMin": "Giá phải >= 0",
+          "selectService": "Vui lòng chọn ít nhất một dịch vụ để bán."
+        }
+      },
+      "price": {
+        "discount": "Chiết khấu:",
+        "final": "Giá sau chiết khấu:",
+        "noSale": "No sale",
+        "original": "Giá:"
+      },
+      "search": {
+        "button": "Đăng website lên sàn",
+        "clearFilter": "Bỏ lọc",
+        "field": "Lĩnh vực",
+        "placeholder": "Nhập domain...",
+        "status": "Trạng thái dịch vụ",
+        "title": "Tìm kiếm tên miền"
+      }
+    },
+    "modal": {
+      "clearFilter": "Bỏ lọc",
+      "partner": "Chọn nhà cung cấp",
+      "serviceType": "Dịch vụ",
+      "title": "Chi tiết gói dịch vụ"
+    },
+    "note": {
+      "content1": {
+        "1": "🔥 Bạn có website có thể tạo tài khoản và đăng lên bán GP",
+        "2": "🔥 Người mua liên hệ trực tiếp với người bán thông qua SĐT và link Facebook",
+        "3": "🔥 Người mua và người bán tự nguyện giao dịch cùng nhau",
+        "4": "🔥 69vn marketing là nền tảng kết nối, không thu bất kì khoản phí nào. Vì vậy chúng tôi không chịu trách nhiệm bất kì vấn đề gì phát sinh giữa người mua và người bán."
+      },
+      "content2": {
+        "1": "‼ Kiểm tra độ tin tưởng của người bán thông qua trang cá nhân",
+        "2": "‼ Khuyến khích giao dịch trung gian tránh các trường hợp Scam",
+        "3": "‼ Mọi vấn đề Scam, lừa đảo, hay không hài lòng về dịch vụ GP của bên nào mọi người có thể tạo bài viết và tranh luận cùng nhau trong Group này"
+      },
+      "detailTitle": "Chi tiết đơn hàng",
+      "serviceDetails": "Chi tiết dịch vụ",
+      "title1": "Ghi chú",
+      "title2": "MỘT SỐ LƯU Ý KHI GIAO DỊCH:"
+    },
+    "order": {
+      "columns": {
+        "buyer": "Người mua",
+        "buyerTelegram": "Telegram người mua",
+        "discount": "Chiết khấu",
+        "fieldType": "Thể loại",
+        "orderCode": "Mã đơn hàng",
+        "priceAdjustment": "Điều chỉnh giá",
+        "quantity": "Số lượng",
+        "serviceName": "Tên dịch vụ",
+        "serviceType": "Loại dịch vụ",
+        "status": "Trạng thái đơn hàng",
+        "time": "Thời gian",
+        "totalAfterDiscount": "Tổng tiền sau giảm giá"
+      },
+      "search": {
+        "button": "Tìm kiếm",
+        "buyer": "Người mua",
+        "buyerTelegram": "Telegram người mua",
+        "clearFilter": "Bỏ lọc",
+        "discount": "Chiết khấu",
+        "field": "Lĩnh vực",
+        "fieldType": "Lĩnh vực",
+        "partner": "Đối tác",
+        "placeholder": "Nhập tên đơn hàng...",
+        "priceAdjustment": "Điều chỉnh giá",
+        "quantity": "Số lượng",
+        "serviceName": "Tên dịch vụ",
+        "serviceType": "Loại dịch vụ",
+        "status": "Trạng thái đơn hàng",
+        "time": "Thời gian",
+        "title": "Tìm kiếm đơn hàng",
+        "totalAfterDiscount": "Tổng tiền sau giảm giá"
+      },
+      "status": {
+        "cancelled": "Đã hủy",
+        "completed": "Hoàn thành",
+        "pending": "Chờ xử lý",
+        "processing": "Đang xử lý"
+      },
+      "title": "Quản lý đơn hàng"
+    },
+    "search": {
+      "clearFilter": "Bỏ lọc",
+      "partner": "Chọn nhà cung cấp",
+      "placeholder": "Nhập tên gói...",
+      "serviceType": "Dịch vụ",
+      "title": "Tìm kiếm gói dịch vụ"
+    }
+  },
+  "PasswordUpdate": {
+    "confirmPassword": {
+      "label": "Xác nhận mật khẩu",
+      "match": "Mật khẩu xác nhận không khớp",
+      "required": "Xác nhận mật khẩu là bắt buộc"
+    },
+    "newPassword": {
+      "label": "Mật khẩu mới",
+      "minLength": "Mật khẩu phải có ít nhất 8 ký tự",
+      "pattern": "Mật khẩu phải chứa ít nhất 1 chữ hoa, 1 chữ thường, 1 số và 1 ký tự đặc biệt",
+      "required": "Mật khẩu mới là bắt buộc"
+    },
+    "oldPassword": {
+      "label": "Mật khẩu cũ",
+      "required": "Mật khẩu cũ là bắt buộc"
+    },
+    "save": "Lưu",
+    "title": "Cập nhật mật khẩu"
+  },
+  "SeoerDomain": {
+    "myDomain": {
+      "columns": {
+        "actions": "Thao tác",
+        "assignedUser": "Người được giao",
+        "budget": "Ngân sách",
+        "createdAt": "Ngày tạo",
+        "domainName": "Tên miền",
+        "status": "Trạng thái",
+        "type": "Loại"
+      },
+      "search": {
+        "clearFilter": "Bỏ lọc",
+        "placeholder": "Nhập domain...",
+        "status": "Trạng thái Domain"
+      },
+      "title": "Tìm kiếm tên miền"
+    },
+    "services": {
+      "addCart": {
+        "addToCart": "Thêm vào giỏ hàng",
+        "cancel": "Hủy",
+        "discount": "Chiết khấu:",
+        "total": "Tổng tiền:"
+      },
+      "columns": {
+        "actions": "Thao tác",
+        "da": "DA",
+        "domainName": "Tên miền",
+        "dr": "DR",
+        "fieldType": "Lĩnh vực",
+        "name": "Tên dịch vụ",
+        "note": "Ghi chú",
+        "partner": "Đối tác",
+        "price": "Giá",
+        "serviceType": "Loại dịch vụ",
+        "traffic": "Lưu lượng"
+      },
+      "detail": {
+        "title": "Chi tiết dịch vụ"
+      },
+      "pricing": {
+        "bannerPrice": "Giá Banner",
+        "discount": "Chiết khấu:",
+        "final": "Giá sau chiết khấu:",
+        "guestPostPrice": "Giá Guest Post",
+        "original": "Giá:",
+        "packPrice": "Giá Pack",
+        "textLinkPrice": "Giá Text Link"
+      },
+      "search": {
+        "clearFilter": "Bỏ lọc",
+        "fieldType": "Lĩnh vực",
+        "partner": "Chọn nhà cung cấp",
+        "placeholder": "Nhập domain...",
+        "serviceType": "Dịch vụ"
+      },
+      "title": "Tìm kiếm tên miền"
+    }
+  },
+  "Service": {
+    "actions": {
+      "viewDetails": "Xem chi tiết"
+    },
+    "errors": {
+      "changeStatusFailure": "Thay đổi trạng thái thất bại"
+    },
+    "messages": {
+      "changeStatusSuccess": "Thay đổi trạng thái thành công"
+    },
+    "modal": {
+      "changeStatus": {
+        "cancel": "Hủy",
+        "confirm": "Xác nhận",
+        "message": "Bạn có chắc chắn muốn thay đổi trạng thái này không?",
+        "title": "Xác nhận thay đổi trạng thái"
+      }
+    },
+    "status": {
+      "approved": "Đã duyệt",
+      "cancelled": "Đã hủy",
+      "completed": "Hoàn thành",
+      "pending": "Đang chờ",
+      "rejected": "Đã từ chối"
+    }
+  },
+  "ServiceManagement": {
+    "columns": {
+      "createdAt": "Ngày tạo",
+      "name": "Tên dịch vụ",
+      "partner": "Đối tác",
+      "price": "Giá",
+      "status": "Trạng thái",
+      "type": "Loại"
+    },
+    "modal": {
+      "title": "Chi tiết dịch vụ"
+    },
+    "noData": {
+      "title": "Không tìm thấy dịch vụ"
+    },
+    "price": {
+      "discount": "Chiết khấu:",
+      "final": "Giá sau chiết khấu:",
+      "original": "Giá:"
+    },
+    "search": {
+      "clearFilter": "Bỏ lọc",
+      "partner": "Chọn nhà cung cấp",
+      "placeholder": "Tìm kiếm Service",
+      "serviceType": "Dịch vụ",
+      "status": "Trạng thái"
+    },
+    "serviceTypes": {
+      "banner": "Banner",
+      "gp": "Guest Post",
+      "textlink": "Text Link"
+    }
+  },
+  "Teams": {
+    "actions": {
+      "deleteTeam": "Xóa nhóm",
+      "editTeam": "Sửa nhóm"
+    },
+    "addButton": "Thêm nhóm",
+    "columns": {
+      "action": "Thao tác",
+      "createdAt": "Ngày tạo",
+      "description": "Mô tả",
+      "leaders": "Leaders",
+      "memberCount": "Số lượng thành viên",
+      "name": "Tên nhóm",
+      "noLeaders": "Chưa có leader"
+    },
+    "confirmDelete": {
+      "message": "Bạn có chắc chắn muốn xóa team \"{name}\" không? Hành động này không thể hoàn tác.",
+      "title": "Xác nhận xóa"
+    },
+    "createEdit": {
+      "buttons": {
+        "addLeaderButton": "Thêm Leader/Vice Leader",
+        "addMember": "Thêm thành viên",
+        "addMemberButton": "Thêm Member",
+        "cancel": "Hủy",
+        "createTeam": "Tạo nhóm",
+        "save": "Lưu",
+        "update": "Cập nhật",
+        "updateTeam": "Cập nhật nhóm"
+      },
+      "createTitle": "Tạo nhóm mới",
+      "editTitle": "Chỉnh sửa nhóm",
+      "fields": {
+        "basicInfo": "Thông tin cơ bản",
+        "description": "Mô tả",
+        "selectRole": "Chọn vai trò",
+        "teamMembers": "Thành viên team",
+        "teamName": "Tên nhóm"
+      },
+      "messages": {
+        "addMemberInstruction": "Sử dụng nút Thêm Member hoặc Thêm Leader/Vice Leader để thêm thành viên",
+        "clickAddMember": "Nhấn \"Thêm thành viên\" để thêm thành viên nhóm",
+        "createError": "Lỗi khi tạo nhóm",
+        "createSuccess": "Tạo nhóm thành công",
+        "currentMembers": "Thành viên hiện tại",
+        "errorLoadingTeam": "Error loading team data. Please try again.",
+        "loading": "Đang tải dữ liệu nhóm...",
+        "noMembers": "Chưa có thành viên nào",
+        "noTeamData": "No team data found.",
+        "removeMemberError": "Lỗi khi xóa thành viên",
+        "removeMemberSuccess": "Xóa thành viên thành công",
+        "updateError": "Lỗi khi cập nhật nhóm",
+        "updateRoleError": "Lỗi khi cập nhật vai trò",
+        "updateRoleSuccess": "Cập nhật vai trò thành công",
+        "updateSuccess": "Cập nhật nhóm thành công"
+      },
+      "placeholders": {
+        "description": "Nhập mô tả nhóm",
+        "teamName": "Nhập tên nhóm"
+      },
+      "validation": {
+        "descriptionRequired": "Mô tả là bắt buộc",
+        "invalidRole": "Vai trò không hợp lệ cho người dùng này",
+        "membersRequired": "Vui lòng thêm ít nhất một thành viên",
+        "nameRequired": "Tên nhóm là bắt buộc"
+      }
+    },
+    "messages": {
+      "deleteError": "Xóa team thất bại",
+      "deleteSuccess": "Xóa team thành công"
+    },
+    "modal": {
+      "addMember": {
+        "addMemberError": "Có lỗi khi thêm thành viên",
+        "addMemberSuccess": "Thêm thành viên thành công",
+        "addToTeam": "Thêm thành viên",
+        "cancel": "Hủy",
+        "memberInfo": "Thông tin thành viên đã chọn:",
+        "searchLeader": "Tìm kiếm Leader/Vice Leader theo tên hoặc email...",
+        "searchSeoer": "Tìm kiếm SEOER theo tên hoặc email...",
+        "selectFullInfo": "Vui lòng chọn đầy đủ thông tin",
+        "selectRole": "Chọn vai trò",
+        "systemRole": "Vai trò hệ thống:",
+        "teamRole": "Vai trò :",
+        "titleLeader": "Thêm Leader/Vice Leader",
+        "titleMember": "Thêm Member"
+      },
+      "deleteMember": {
+        "message": "Khi xóa thành viên này, các domain đang được gán cho họ sẽ tự động chuyển sang team mới của họ. Nếu bạn không muốn điều đó xảy ra, hãy gỡ gán (unassign) các domain trước khi xóa.",
+        "title": "Xác nhận xóa thành viên"
+      }
+    },
+    "noData": {
+      "title": "Không tìm thấy nhóm"
+    },
+    "pagination": {
+      "totalItems": "Tổng {count} teams"
+    },
+    "search": {
+      "placeholder": "Tìm kiếm nhóm..."
+    },
+    "teamDetail": {
+      "messages": {
+        "assignError": "Assign domain thất bại",
+        "assignSuccess": "Assign domain thành công!",
+        "unassignError": "Remove domain thất bại",
+        "unassignSuccess": "Remove domain thành công!"
+      },
+      "modal": {
+        "assignButton": "Assign",
+        "assigningButton": "Đang assign...",
+        "availableDomains": "Domains khả dụng",
+        "budgetLabel": "Budget:",
+        "currentlyAssigned": "Domains đã assign",
+        "loadingDomains": "Đang tải domains...",
+        "noAvailableDomains": "Không có domain khả dụng để assign",
+        "noDomainAssigned": "Chưa có domain nào được assign",
+        "notAvailable": "N/A",
+        "removeButton": "Remove",
+        "removingButton": "Đang remove...",
+        "subtitle": "Assign/Unassign domains cho thành viên này",
+        "title": "Quản lý domains cho {username}"
+      },
+      "page": {
+        "backToTeams": "Quay lại danh sách teams",
+        "goBack": "Quay lại",
+        "loadingTeam": "Đang tải...",
+        "subtitle": "Quản lý thành viên và assign domains cho team",
+        "teamMembers": "Thành viên team",
+        "teamNotFound": "Không tìm thấy team",
+        "teamNotFoundDescription": "Team bạn đang tìm kiếm không tồn tại hoặc bạn không có quyền truy cập.",
+        "title": "Quản lý thành viên team"
+      },
+      "search": {
+        "placeholder": "Tìm kiếm thành viên..."
+      },
+      "table": {
+        "actions": "Thao tác",
+        "assignedDomains": "Domains được assign",
+        "manageDomains": "Quản lý domains",
+        "member": "Thành viên",
+        "noDomainsAssigned": "Chưa assign domain",
+        "role": "Vai trò",
+        "totalMembers": "Tổng {count} thành viên"
+      }
+    },
+    "title": "Danh sách Team"
+  },
+  "User": {
+    "addButton": "Thêm người dùng",
+    "columns": {
+      "actions": "Thao tác",
+      "createdAt": "Ngày tạo",
+      "email": "Email",
+      "role": "Vai trò",
+      "username": "Tên đăng nhập"
+    },
+    "noData": {
+      "title": "Không tìm thấy người dùng"
+    },
+    "search": {
+      "placeholder": "Tìm kiếm người dùng"
+    },
+    "title": "Quản lý người dùng"
+  },
+  "UserDetail": {
+    "title": "Chi tiết người dùng"
+  },
+  "UserDomain": {
+    "addDomain": "Thêm domain",
+    "columns": {
+      "budget": "Ngân sách",
+      "createdAt": "Ngày tạo",
+      "domainName": "Tên miền",
+      "domainType": "Loại miền",
+      "status": "Trạng thái",
+      "userName": "Tên người dùng"
+    },
+    "noData": {
+      "message": "",
+      "title": "Không có domain nào"
+    },
+    "title": "Domains được assign"
+  },
+  "Users": {
+    "buttons": {
+      "cancel": "Hủy",
+      "clearFilter": "Bỏ lọc",
+      "delete": "Xóa",
+      "edit": "Sửa",
+      "save": "Lưu"
+    },
+    "columns": {
+      "account": "Tài khoản",
+      "actions": "Thao tác",
+      "createdAt": "Ngày tạo",
+      "role": "Vai trò",
+      "totalBudget": "Tổng ngân sách"
+    },
+    "roles": {
+      "partner": "Đối tác",
+      "seoer": "SEOer",
+      "superAdmin": "Super Admin"
+    },
+    "title": "Quản lý người dùng"
+  },
+  "actionStatusOrder": {
+    "CANCELLED_BY_MANAGER": "Quản lý huỷ đơn",
+    "CANCELLED_BY_SEOER": "SEOer huỷ đơn",
+    "COMPLETED_BY_PARTNER": "NCC hoàn thành",
+    "CONFIRMED_BY_PARTNER": "NCC xác nhận",
+    "CONFIRMED_BY_TEAM_LEADER": "TT/TP xác nhận",
+    "CONFIRMED_COMPLETION_BY_SEOER": "SEOer xác nhận hoàn thành",
+    "PAID_BY_MANAGER": "TL thanh toán",
+    "PAYMENT_APPROVED_BY_MANAGER": "TL SEO duyệt thanh toán",
+    "REJECTED_BY_TEAM_LEADER": "TT/TP từ chối",
+    "SEOER_ORDER": "Tạo đơn hàng"
+  },
+  "comment": {
+    "cancel": "Hủy",
+    "createCommentError": "Lỗi khi tạo bình luận",
+    "remove": "Xóa",
+    "reply": "Trả lời",
+    "submit": "Gửi",
+    "uploadImageError": "Tải ảnh lên thất bại",
+    "validation": {
+      "required": "Vui lòng nhập nội dung bình luận"
+    },
+    "writeComment": "Viết bình luận..."
+  },
+  "common": {
+    "addToCart": "Thêm vào giỏ hàng",
+    "cancel": "Hủy",
+    "changeStatus": "Thay đổi trạng thái thành công",
+    "clearFilter": "Bỏ lọc",
+    "confirm": "Xác nhận",
+    "dateRange": {
+      "endDate": "Ngày kết thúc",
+      "startDate": "Ngày bắt đầu"
+    },
+    "delete": "Xóa",
+    "deleteConfirmMessage": "Bạn có chắc chắn muốn xóa mục này không?",
+    "deleteConfirmTitle": "Xác nhận xóa",
+    "deleteError": "Đã xảy ra lỗi khi xoá thông tin giỏ hàng!",
+    "deleteSuccess": "Xoá thông tin giỏ hàng thành công!",
+    "edit": "Sửa",
+    "success": {
+      "changeStatus": "Thay đổi trạng thái thành công"
+    },
+    "viewDetails": "Xem chi tiết"
+  },
+  "domainStatus": {
+    "AUDIT": "Kiểm toán",
+    "BUYING": "Đang mua",
+    "CANCEL_BUY": "Hủy mua",
+    "DIE": "Chết",
+    "DNS": "DNS",
+    "PURCHASED": "Đã mua",
+    "REQUEST_BUY": "Yêu cầu mua",
+    "SATELLITE": "Vệ tinh",
+    "SEOING": "Đang SEO",
+    "STOPPED": "Dừng"
+  },
+  "role": {
+    "ADMIN": "Quản trị viên",
+    "ASSISTANT": "Trợ lý",
+    "DIRECTOR": "Giám đốc",
+    "GUEST": "Khách",
+    "MANAGER": "Quản lý",
+    "PARTNER": "Đối tác",
+    "PRESIDENT": "Tổng giám đốc",
+    "SEOER": "SEOer",
+    "SUPER_ADMIN": "Super Admin",
+    "TEAM_LEADER": "Tổ trưởng",
+    "TEAM_MEMBER": "Thành viên nhóm",
+    "USER": "Người dùng",
+    "VICE_PRESIDENT": "Phó tổng giám đốc",
+    "VICE_TEAM_LEADER": "Tổ phó"
+  },
+  "serviceFieldType": {
+    "BUSINESS": "Kinh doanh",
+    "GENERAL": "Tổng hợp",
+    "SPORT": "Thể thao",
+    "TECHNICAL": "Kỹ thuật"
+  },
+  "sidebar": {
+    "accessDenied": "Bạn không có quyền truy cập trang này",
+    "admin": "Admin",
+    "domain": "Domain",
+    "domainsTitle": "Domains",
+    "list": "Danh sách",
+    "myTeam": "My Team",
+    "order": "Order",
+    "ordersTitle": "Orders",
+    "partner": "Partner",
+    "seoer": "SEOer",
+    "service": "Service",
+    "statistics": "Statistics",
+    "teamMembers": "Team Members",
+    "teams": "Team",
+    "teamsTitle": "Teams",
+    "users": "Users"
+  },
+  "statistics": {
+    "approvedMoney": "Tiền đã duyệt",
+    "expenseByOrderStatus": "Chi phí theo trạng thái đơn hàng",
+    "expenseByOrderStatusTeam1New": "Chi phí theo trạng thái đơn hàng của team 1 mới",
+    "filter": {
+      "apply": "Áp dụng",
+      "customDateRange": "Khoảng ngày tùy chỉnh",
+      "lastMonth": "Tháng trước",
+      "lastWeek": "Tuần trước",
+      "month": "Tháng",
+      "monthYear": "Chọn tháng/năm cụ thể",
+      "noFilter": "Không",
+      "searchFrom": "Kết quả thống kê từ",
+      "selectMonth": "Chọn tháng",
+      "selectYear": "Chọn năm",
+      "thisMonth": "Tháng này",
+      "thisWeek": "Tuần này",
+      "timeRange": "Khoảng thời gian",
+      "title": "Bộ lọc thống kê",
+      "to": "Đến",
+      "year": "Năm"
+    },
+    "moneyByStatus": "Thống kê số tiền theo trạng thái",
+    "noData": "Không có dữ liệu",
+    "pendingMoney": "Tiền đang chờ",
+    "quantity": "Số lượng",
+    "rejectedMoney": "Tiền bị từ chối",
+    "totalDomain": "Tổng domain",
+    "totalMoney": "Tổng tiền",
+    "totalMoneyByStatus": "Thống kê số tiền theo trạng thái",
+    "totalMoneyVND": "Số tiền (VND)",
+    "totalOrder": "Tổng đơn hàng",
+    "totalService": "Tổng dịch vụ",
+    "expenseByDomainBranch": "Chi phí theo brand"
+  },
+  "statusOrder": {
+    "CANCELLED_BY_MANAGER": "Quản lý đã huỷ đơn",
+    "CANCELLED_BY_SEOER": "SEOer đã huỷ đơn",
+    "COMPLETED_BY_PARTNER": "NCC đã hoàn thành",
+    "CONFIRMED_BY_PARTNER": "NCC đã xác nhận",
+    "CONFIRMED_BY_TEAM_LEADER": "TT/TP đã xác nhận",
+    "CONFIRMED_COMPLETION_BY_SEOER": "SEOer đã xác nhận hoàn thành",
+    "PAID_BY_MANAGER": "TL đã thanh toán",
+    "PAYMENT_APPROVED_BY_MANAGER": "TL SEO đã duyệt thanh toán",
+    "REJECTED_BY_TEAM_LEADER": "TT/TP đã từ chối",
+    "SEOER_ORDER": "Tạo đơn hàng",
+    "cancel": "Hủy",
+    "changeStatus": "Thay đổi trạng thái thành công",
+    "confirm": "Xác nhận",
+    "viewDetails": "Xem chi tiết"
+  },
+  "statusService": {
+    "APPROVED": "Đã duyệt",
+    "PENDING": "Đang chờ duyệt",
+    "REJECTED": "Đã từ chối"
+  }
+}

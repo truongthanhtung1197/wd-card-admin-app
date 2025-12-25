@@ -1,0 +1,170 @@
+.user {
+  background-color: lightgrey;
+  border-radius: 50%;
+}
+
+/* comment component */
+
+.comment {
+  --size: 2rem;
+  position: relative;
+  display: flex;
+  gap: 0.5rem;
+
+  p {
+    font-family: "Flow Circular", sans-serif;
+  }
+
+  @container style(--depth: 1) or style(--depth: 2) {
+    --size: 1.5rem;
+  }
+}
+
+.comment__actions {
+  display: flex;
+  gap: 1rem;
+  padding-block: 4px;
+
+  a {
+    text-decoration: none;
+    color: #222;
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+
+.comment__body {
+  padding-left: 5px;
+  padding-top: 5px;
+  border-radius: 15px;
+}
+
+@container style(--depth: 0) {
+  li:has(ul) > .comment {
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      inset-inline-start: 15px;
+      top: calc(var(--size) + 15px);
+      bottom: 0;
+      width: 1px;
+      background: #e2e2e2;
+    }
+  }
+}
+
+@container style(--depth: 1) {
+  li:has(ul) > .comment {
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      inset-inline-start: 19px;
+      top: calc(var(--size) + 23px);
+      bottom: 0;
+      width: 1px;
+      background: #e2e2e2;
+    }
+  }
+}
+
+@container style(--depth: 1) {
+  li:not(:last-child) {
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      inset-inline-start: 15px;
+      top: 0; 
+      bottom: 0;
+      width: 1px;
+      background: #e2e2e2;
+    }
+  }
+
+  li {
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      inset-inline-start: 15px;
+      top: -2px;
+      height: 20px;
+      width: 28px;
+      border-inline-start: 1px solid #e2e2e2;
+      border-bottom: 1px solid #e2e2e2;
+      background: transparent;
+      border-end-start-radius: 10px;
+    }
+  }
+}
+
+@container style(--depth: 2) {
+  li {
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      inset-inline-start: 19px;
+      top: -2px;
+      height: 20px;
+      width: 28px;
+      border-inline-start: 1px solid #e2e2e2;
+      border-bottom: 1px solid #e2e2e2;
+      background: transparent;
+      border-end-start-radius: 10px;
+    }
+  }
+
+  li:not(:last-child) {
+    &:before {
+      content: "";
+      position: absolute;
+      inset-inline-start: 19px;
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      background: #e2e2e2;
+    }
+  }
+}
+
+@container style(--nested: true) {
+  .comment {
+    position: relative;
+    padding-top: 4px;
+  }
+
+  li {
+    padding-inline-start: 3rem;
+  }
+}
+
+strong {
+  font-weight: bold;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "system-ui";
+  line-height: 1.3;
+}
+
+.alert {
+  background-color: color-mix(in hsl, yellow 20%, white);
+  text-align: center;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}

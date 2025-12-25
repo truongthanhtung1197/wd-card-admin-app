@@ -1,0 +1,94 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Get source
+        uses: actions/checkout@v4
+
+      - name: 🔔 Notify start deploy
+        run: |
+          export TZ='Asia/Ho_Chi_Minh'
+          TIME=$(date +'%H:%M:%S %d-%m-%Y')
+          ACTOR="${{ github.actor }}"
+          curl -s -X POST https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage \
+          -d chat_id=${{ secrets.TELEGRAM_CHAT_ID }} \
+          -d parse_mode=MarkdownV2 \
+          -d text="🚀 *Starting Deploy CRM App*  🕐 Time: \`${TIME}\` 👤 Actor: \`${ACTOR}\`"
+
+      - name: 📦 Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "yarn"
+
+      - name: 📥 Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: 🛠️ Build
+        run: yarn build
+
+      - name: ❌ Notify build failed
+        if: failure()
+        run: |
+          export TZ='Asia/Ho_Chi_Minh'
+          TIME=$(date +'%H:%M:%S %d-%m-%Y')
+          ACTOR="${{ github.actor }}"
+          curl -s -X POST https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage \
+          -d chat_id=${{ secrets.TELEGRAM_CHAT_ID }} \
+          -d parse_mode=MarkdownV2 \
+          -d text="❌ *Build CRM App Failed*  🕐 \`${TIME}\` 👤 \`${ACTOR}\`"
+
+      - name: 🚚 Deploy to VPS
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USER }}
+          password: ${{ secrets.VPS_PASSWORD }}
+          port: 22
+          script: |
+            export NVM_DIR="$HOME/.nvm"
+            [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+            nvm use 22.14.0
+            node -v
+            yarn -v
+            cd /var/source_code/crm-app
+            git checkout .
+            git pull origin main
+            rm -rf node_modules yarn.lock
+            yarn install --frozen-lockfile
+            yarn build
+            if [ $? -eq 0 ]; then
+              pm2 restart crm-app
+            else
+              echo "Build failed, skipping PM2 restart"
+              exit 1
+            fi
+
+      - name: ✅ Notify deploy success
+        run: |
+          export TZ='Asia/Ho_Chi_Minh'
+          TIME=$(date +'%H:%M:%S %d-%m-%Y')
+          ACTOR="${{ github.actor }}"
+          curl -s -X POST https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage \
+          -d chat_id=${{ secrets.TELEGRAM_CHAT_ID }} \
+          -d parse_mode=MarkdownV2 \
+          -d text="✅ *Deploy CRM App Successful* 🎉 CRM App has been updated 🕐 \`${TIME}\` 👤 \`${ACTOR}\`"
+
+      - name: ❌ Notify deploy failed
+        if: failure()
+        run: |
+          export TZ='Asia/Ho_Chi_Minh'
+          TIME=$(date +'%H:%M:%S %d-%m-%Y')
+          ACTOR="${{ github.actor }}"
+          curl -s -X POST https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage \
+          -d chat_id=${{ secrets.TELEGRAM_CHAT_ID }} \
+          -d parse_mode=MarkdownV2 \
+          -d text="🚫 *Deploy CRM App Failed* 🕐 \`${TIME}\` 👤 \`${ACTOR}\`"

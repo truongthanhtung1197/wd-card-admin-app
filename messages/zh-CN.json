@@ -1,0 +1,1711 @@
+{
+  "ActionColumn": {
+    "delete": "删除",
+    "deleteConfirm": {
+      "error": "用户删除失败",
+      "message": "您确定要删除此用户吗？",
+      "success": "用户删除成功",
+      "title": "确认删除"
+    },
+    "edit": "编辑",
+    "editDomain": "编辑域名",
+    "removeUser": "从此用户中移除",
+    "removeUserError": "从此用户中移除时出错",
+    "removeUserSuccess": "从此用户中移除成功",
+    "updateStatus": "域名状态已更新",
+    "updateStatusError": "更新域名状态时出错",
+    "updateStatusSuccess": "域名状态已更新"
+  },
+  "ActionColumnService": {
+    "deleteConfirm": "您确定要删除此服务包吗？",
+    "deleteFailed": "删除服务包时发生错误",
+    "deleteSuccess": "服务包删除成功",
+    "deleteTitle": "删除服务包"
+  },
+  "Admin": {
+    "addButton": "添加管理员",
+    "admin": "管理员",
+    "columns": {
+      "account": "账户",
+      "createdAt": "创建日期",
+      "role": "角色",
+      "totalBudget": "总预算"
+    },
+    "create": {
+      "add": "添加",
+      "basicInfo": "基本信息",
+      "cancel": "取消",
+      "clearFilter": "清除筛选",
+      "delete": "删除",
+      "edit": "编辑",
+      "email": "电子邮件",
+      "error": "添加管理员失败",
+      "password": "密码",
+      "role": "角色",
+      "save": "保存",
+      "success": "添加管理员成功",
+      "title": "添加管理员",
+      "username": "用户名"
+    },
+    "detail": "详情",
+    "edit": {
+      "error": "更新管理员失败",
+      "success": "更新管理员成功",
+      "title": "编辑管理员"
+    },
+    "noData": {
+      "title": "未找到管理员"
+    },
+    "search": {
+      "placeholder": "搜索管理员"
+    },
+    "title": "管理员管理",
+    "validation": {
+      "password": {
+        "min": "密码长度至少为6个字符。",
+        "required": "请输入密码。"
+      },
+      "role": {
+        "required": "请选择角色。"
+      },
+      "username": {
+        "invalid": "用户名只能包含字母和数字。",
+        "required": "请输入用户名。"
+      }
+    }
+  },
+  "BasicInformation": {
+    "buttons": {
+      "cancel": "取消",
+      "save": "保存"
+    },
+    "fields": {
+      "bankName": "银行名称",
+      "bankNameInCard": "卡片上的姓名",
+      "bankNumber": "银行账号",
+      "displayName": "显示名称",
+      "email": "电子邮箱",
+      "phone": "电话号码",
+      "role": "角色",
+      "telegramUsername": "Telegram 用户名",
+      "totalBudget": "总预算",
+      "username": "用户名"
+    },
+    "title": "基本信息"
+  },
+  "ButtonWaitPayment": {
+    "title": "待支付金额:"
+  },
+  "Comment": {
+    "noComments": "暂无评论。成为第一个评论的人！",
+    "title": "评论"
+  },
+  "CommentForm": {
+    "placeholder": "输入评论",
+    "validation": {
+      "required": "请输入评论内容"
+    }
+  },
+  "CommentItem": {
+    "reply": "回复",
+    "uploadImageError": "上传图片失败"
+  },
+  "ConfirmUnsavedModal": {
+    "buttons": {
+      "keepEditing": "继续编辑",
+      "leave": "离开"
+    },
+    "message": "如果您离开页面，未保存的更改将会丢失",
+    "title": "未保存的更改"
+  },
+  "ContactInformation": {
+    "bankNameInCard": "银行卡上的姓名",
+    "bankNumber": "银行账号",
+    "cancel": "取消",
+    "edit": "编辑",
+    "phone": "电话号码",
+    "save": "保存",
+    "selectBank": "选择银行",
+    "telegramUsername": "名称 (Telegram)",
+    "title": "联系信息",
+    "usdt": "USDT (TRC20)",
+    "validation": {
+      "bankName": {
+        "required": "银行名称为必填项"
+      },
+      "bankNameInCard": {
+        "max": "卡上姓名不能超过50个字符",
+        "min": "卡上姓名至少需要3个字符",
+        "required": "卡上姓名为必填项"
+      },
+      "bankNumber": {
+        "invalid": "银行账号无效",
+        "required": "银行账号为必填项"
+      },
+      "phone": {
+        "invalid": "电话号码无效",
+        "required": "电话号码为必填项"
+      },
+      "telegramUsername": {
+        "invalid": "Telegram用户名无效",
+        "required": "Telegram用户名为必填项"
+      }
+    }
+  },
+  "CopyButton": {
+    "error": "无法复制：",
+    "success": "已复制到剪贴板！"
+  },
+  "CreateAdmin": {
+    "basicInfo": "基本信息",
+    "buttons": {
+      "add": "添加",
+      "cancel": "取消"
+    },
+    "fields": {
+      "email": "电子邮件",
+      "password": "密码",
+      "role": "角色",
+      "username": "用户名"
+    },
+    "messages": {
+      "createError": "用户创建失败",
+      "createSuccess": "用户创建成功"
+    },
+    "title": "添加用户",
+    "validation": {
+      "emailInvalid": "电子邮件无效",
+      "passwordMin": "密码至少需要6个字符",
+      "passwordRequired": "请输入密码",
+      "roleRequired": "请选择角色",
+      "usernameInvalid": "用户名无效",
+      "usernameRequired": "请输入用户名"
+    }
+  },
+  "CreateDomain": {
+    "buttons": {
+      "cancel": "取消",
+      "save": "保存"
+    },
+    "error": "创建域名失败",
+    "fields": {
+      "assignToTeam": "分配给团队",
+      "basicInfo": "基本信息",
+      "budget": "预算",
+      "name": "域名",
+      "selectTeam": "选择团队",
+      "status": "状态",
+      "type": "域名类型"
+    },
+    "success": "创建域名成功",
+    "title": "创建新域名",
+    "validation": {
+      "budgetInvalid": "预算无效",
+      "budgetMax": "预算不得超过 99,999,999,999",
+      "budgetRequired": "预算是必需的",
+      "nameRequired": "域名是必需的",
+      "statusRequired": "状态是必需的",
+      "typeRequired": "域名类型是必需的"
+    }
+  },
+  "CustomColumn": {
+    "columns": {
+      "createdAt": "创建日期",
+      "numberOfClosedLoan": "已关闭贷款数",
+      "totalLoanFunded": "贷款总额"
+    }
+  },
+  "DetailModal": {
+    "accountName": "账户名称",
+    "accountNumber": "账号",
+    "additionalDiscount": "额外折扣",
+    "anchorText1": "锚文本1",
+    "anchorText2": "锚文本2",
+    "bankName": "银行名称",
+    "buyer": "买家",
+    "buyerTelegram": "Telegram",
+    "cancel": "取消",
+    "complimentaryServices": "赠送服务",
+    "contactTelegram": "联系Telegram",
+    "createdAt": "创建时间",
+    "demoUrl": "演示链接",
+    "description": "描述",
+    "detailService": "详情服务",
+    "discount": "折扣",
+    "domain": "域名",
+    "edit": "编辑",
+    "expiryDate": "到期日期",
+    "finalPrice": "最终价格",
+    "good": "良好",
+    "linkDrive": "Drive链接",
+    "messages": {
+      "billPaymentRequired": "支付链接不能为空！",
+      "updateBillPaymentError": "更新支付链接失败！",
+      "updateBillPaymentSuccess": "更新支付链接成功！",
+      "updateLinkDriveError": "更新Drive链接失败！",
+      "updateLinkDriveSuccess": "更新Drive链接成功！",
+      "updatePriceAdjustmentError": "更新价格调整失败！",
+      "updatePriceAdjustmentSuccess": "更新价格调整成功！"
+    },
+    "metrics": {
+      "dr": "DR",
+      "organicTraffic": "自然流量",
+      "referringDomains": "引用域名"
+    },
+    "newOrRenew": "新购或续费",
+    "note": "备注",
+    "orderCode": "订单编号",
+    "orderDate": "下单日期",
+    "orderInfo": "订单信息",
+    "orderStatus": "订单状态",
+    "partner": "合作伙伴",
+    "partnerInfo": "合作伙伴信息",
+    "paymentBill": "支付账单",
+    "phone": "电话号码",
+    "price": "价格",
+    "priceAdjustment": "价格调整",
+    "priceAfterDiscount": "折扣后价格",
+    "providerRating": "供应商评分",
+    "quantity": "数量",
+    "reviews": "评价",
+    "save": "保存",
+    "serviceInfo": "服务信息",
+    "serviceName": "服务名称",
+    "status": "状态",
+    "telegram": "Telegram",
+    "totalOrder": "折扣后总价",
+    "type": "类型",
+    "updatedAt": "更新时间",
+    "url1": "链接1",
+    "url2": "链接2",
+    "warrantyPeriod": "保修期"
+  },
+  "Domain": {
+    "columns": {
+      "actions": "操作",
+      "assignment": "被分配的域名",
+      "budget": "预算",
+      "createdAt": "创建日期",
+      "name": "域名",
+      "status": "状态",
+      "team": "团队",
+      "teamMembers": "团队成员",
+      "type": "域名类型",
+      "user": "用户名"
+    },
+    "createEdit": {
+      "buttons": {
+        "cancel": "取消",
+        "save": "保存"
+      },
+      "createTitle": "添加新域名",
+      "editTitle": "编辑域名",
+      "labels": {
+        "assignedUser": "指定用户",
+        "budget": "预算",
+        "name": "域名",
+        "selectUser": "选择用户",
+        "status": "状态",
+        "type": "域名类型"
+      },
+      "messages": {
+        "createSuccess": "创建域名成功",
+        "deleteMessage": "您确定要删除此域名吗？",
+        "deleteTitle": "删除域名",
+        "serverError": "服务器错误",
+        "updateSuccess": "更新域名成功"
+      },
+      "validation": {
+        "budgetInvalid": "只能输入数字",
+        "budgetMax": "金额过大",
+        "budgetRequired": "请输入域名预算",
+        "nameRequired": "请输入域名",
+        "statusRequired": "请选择域名状态",
+        "typeRequired": "请选择域名类型"
+      }
+    },
+    "messages": {
+      "noTeamAssigned": "未分配团队"
+    },
+    "search": {
+      "clearFilter": "清除筛选",
+      "filterByTeam": "按团队筛选...",
+      "noDomainsForTeamLeader": "没有属于您所领导团队的域名",
+      "placeholder": "输入域名...",
+      "status": "状态",
+      "title": "搜索域名"
+    },
+    "title": "域名管理"
+  },
+  "Domains": {
+    "domain": "域名",
+    "list": "列表"
+  },
+  "EditAdmin": {
+    "basicInfo": "基本信息",
+    "buttons": {
+      "cancel": "取消",
+      "save": "保存"
+    },
+    "cancel": "取消",
+    "email": "电子邮件",
+    "fields": {
+      "email": "电子邮件",
+      "password": "密码",
+      "role": "角色",
+      "username": "用户名"
+    },
+    "messages": {
+      "updateError": "用户更新失败",
+      "updateSuccess": "用户更新成功"
+    },
+    "password": "密码",
+    "role": "角色",
+    "save": "保存",
+    "title": "编辑用户",
+    "username": "用户名"
+  },
+  "EditDomain": {
+    "buttons": {
+      "cancel": "取消",
+      "save": "保存"
+    },
+    "fields": {
+      "assignToTeam": "分配给团队",
+      "basicInfo": "基本信息",
+      "budget": "预算",
+      "name": "域名",
+      "selectTeam": "选择团队",
+      "status": "状态",
+      "type": "域名类型"
+    },
+    "messages": {
+      "editError": "更新域名失败",
+      "editSuccess": "更新域名成功"
+    },
+    "title": "编辑域名",
+    "validation": {
+      "budgetInvalid": "预算无效",
+      "budgetMax": "预算不得超过 99,999,999,999",
+      "budgetRequired": "预算是必需的",
+      "nameRequired": "域名是必需的",
+      "statusRequired": "状态是必需的",
+      "typeRequired": "域名类型是必需的"
+    }
+  },
+  "FileUpload": {
+    "defaultLabel": "选择要上传的文件",
+    "errors": {
+      "fileSizeExceeded": "文件大小不能超过 {maxSize}MB"
+    },
+    "previewAlt": "已选择的文件",
+    "removeFile": "删除文件"
+  },
+  "Footer": {
+    "about": "关于我们",
+    "aboutLinks": {
+      "benefits": "→ 加入69VN的好处",
+      "blacklist": "→ 69VN合作伙伴黑名单",
+      "recruitmentContent": "→ 内容合作者招聘：@hanii0802",
+      "recruitmentTraffic": "→ 流量招聘：@team69support",
+      "terms": "→ 条款和条件"
+    },
+    "contact": "联系我们",
+    "copyright": "版权所有 ©2023 69VN",
+    "description": "CRM 以专业方式管理 SEO，将所有数据和流程集中在同一个平台上，让团队工作更加清晰、有条理。该系统还能为 SEO 社群搭建沟通桥梁，帮助大家交流经验、分享策略，并共同实现长期发展。",
+    "downloadApp": "下载应用",
+    "help": "帮助",
+    "helpLinks": {
+      "orderIssues": "订单问题：seoteam69vn",
+      "paymentIssues": "支付问题："
+    },
+    "joinGroup": "加入群组以获取我们的最新更新："
+  },
+  "Header": {
+    "auth": {
+      "dashboard": "控制面板",
+      "signIn": "登录"
+    },
+    "cart": {
+      "empty": "购物车为空",
+      "title": "购物车"
+    },
+    "logo": "SEO MARKET",
+    "logout": "退出登录",
+    "nav": {
+      "guide": "指南",
+      "guideLinks": {
+        "enterprise": "企业",
+        "hobby": "兴趣爱好",
+        "individual": "个人",
+        "team": "团队"
+      },
+      "home": "首页",
+      "software": "软件",
+      "softwareLinks": {
+        "branding": "品牌建设",
+        "interfaceDesign": "界面设计",
+        "seo": "SEO",
+        "webDev": "网站开发"
+      }
+    },
+    "settings": "设置"
+  },
+  "HomePage": {
+    "benefitSection": {
+      "items": {
+        "manyPartners": "有多个合作伙伴可供选择",
+        "noFee": "加入软件无需付费",
+        "reliablePartners": "可靠的合作伙伴，提供优质服务和合理价格",
+        "securePayment": "快速、多样、安全和保密的支付方式"
+      },
+      "title1": "寻找网站SEO服务",
+      "title2": "不再困难"
+    },
+    "hero": {
+      "cta": "加入群组以获取我们的最新更新：",
+      "stats": {
+        "orders": "每日新订单",
+        "signups": "每日注册",
+        "transactions": "每日百万交易"
+      },
+      "subtitle": "通过多团队合作帮助您优化站内和站外SEO，获得有机流量和高排名。",
+      "title": "让您的SEO活动取得成功"
+    },
+    "ratingSection": {
+      "ratings": {
+        "agency": "代理机构",
+        "blogger": "博主",
+        "comment1": "太棒了！系统简单易用。我花不了太多时间就能上手，一切都很直观。",
+        "comment10": "使用服务后性能明显提升。得益于优化策略，广告活动取得了好效果。",
+        "comment11": "用户体验有了明显改善。设计精美、细致，适配桌面和移动端。无可挑剔。",
+        "comment12": "服务非常值得信赖。团队非常了解客户需求，能提供合适的解决方案。响应速度也很快。",
+        "comment13": "太棒了！系统简单易用。我花不了太多时间就能上手，一切都很直观。",
+        "comment14": "服务快速，支持周到！咨询团队非常友好且专业。与他们合作让我感到很安心。",
+        "comment15": "下次还会再来！价格合理，质量超出预期。特别印象深刻的是他们对客户需求的把握能力。",
+        "comment16": "很顺畅的体验！界面美观且易于使用。内容呈现科学合理，对我的写作工作帮助很大。",
+        "comment17": "物有所值，品质很高。使用服务后，关键词排名明显提高。我对结果非常满意。",
+        "comment18": "使用服务后性能明显提升。得益于优化策略，广告活动取得了好效果。",
+        "comment19": "内容创意十足，符合构思。我非常满意他们认真而富有创意的工作方式。完成速度也非常快。",
+        "comment2": "服务快速，支持周到！咨询团队非常友好且专业。与他们合作让我感到很安心。",
+        "comment20": "设计富有创意且专业。我对最终产品非常满意。从每个细节都能看出他们的用心投入。",
+        "comment21": "我对您的服务非常满意。咨询团队非常友好且专业。与他们合作让我感到很安心。",
+        "comment22": "下次还会再来！价格合理，质量超出预期。特别印象深刻的是他们对客户需求的把握能力。",
+        "comment3": "下次还会再来！价格合理，质量超出预期。特别印象深刻的是他们对客户需求的把握能力。",
+        "comment4": "很顺畅的体验！界面美观且易于使用。内容呈现科学合理，对我的写作工作帮助很大。",
+        "comment5": "物有所值，品质很高。使用服务后，关键词排名明显提高。我对结果非常满意。",
+        "comment6": "使用服务后性能明显提升。得益于优化策略，广告活动取得了好效果。",
+        "comment7": "内容创意十足，符合构思。我非常满意他们认真而富有创意的工作方式。完成速度也非常快。",
+        "comment8": "非常专业且高效。报告系统详细透明，让我轻松追踪进度。客户支持也非常棒。",
+        "comment9": "内容创意十足，符合构思。我非常满意他们认真而富有创意的工作方式。完成速度也非常快。",
+        "contentStrategist": "内容策略师",
+        "copywriter": "文案撰写者",
+        "digitalMarketer": "数字营销人员",
+        "freelancer": "自由职业者",
+        "graphicDesigner": "平面设计师",
+        "marketer": "营销人员",
+        "seoExpert": "SEO专家",
+        "uxDesigner": "用户体验设计师"
+      },
+      "subtitle": "在超过10,000条评价中获得4.8/5星",
+      "title": "评价"
+    },
+    "title": "你好！"
+  },
+  "Login": {
+    "email": {
+      "label": "邮箱",
+      "required": "请输入邮箱",
+      "invalid": "邮箱格式不正确"
+    },
+    "errors": {
+      "invalidCredentials": "邮箱或密码不正确",
+      "serverError": "服务器错误"
+    },
+    "password": {
+      "label": "密码",
+      "required": "请输入密码"
+    },
+    "submit": "登录",
+    "title": "登录"
+  },
+  "ModalEditOrder": {
+    "buttons": {
+      "cancel": "取消",
+      "confirm": "确认"
+    },
+    "confirmPopup": {
+      "message": "您确定此订单已完成。确认后您将无法撤销订单状态。",
+      "title": "确认"
+    },
+    "fileInput": {
+      "error": "请选择一个文件上传。",
+      "label": "选择文件更新"
+    },
+    "messages": {
+      "updateSuccess": "订单状态已更新"
+    },
+    "title": "确认订单"
+  },
+  "MyCart": {
+    "actions": {
+      "delete": "删除",
+      "viewDetails": "查看详情"
+    },
+    "columns": {
+      "actions": "操作",
+      "discount": "折扣",
+      "finalTotal": "折后总价",
+      "price": "价格",
+      "quantity": "数量",
+      "serviceName": "服务名称",
+      "serviceType": "服务类型",
+      "total": "总价",
+      "totalPrice": "总价"
+    },
+    "delete": {
+      "failed": "删除购物车信息时发生错误！",
+      "success": "删除购物车信息成功！"
+    },
+    "empty": {
+      "message": "",
+      "title": "购物车为空"
+    },
+    "modal": {
+      "detailTitle": "购物车详情",
+      "orderDetails": "订单详情",
+      "serviceDetails": "服务详情"
+    },
+    "order": {
+      "failed": "下订单失败！",
+      "placeOrder": "下订单",
+      "selectAtLeastOne": "请至少选择1个服务来下订单！",
+      "success": "下订单成功！",
+      "totalPayment": "总付款:"
+    },
+    "title": "我的购物车"
+  },
+  "MyOrder": {
+    "actions": {
+      "orderDetails": "订单详情"
+    },
+    "columns": {
+      "actions": "操作",
+      "additionalDiscount": "额外折扣",
+      "discount": "折扣",
+      "domainBudget": "域名预算",
+      "domainName": "域名",
+      "domainSeo": "域名 SEO",
+      "expiredAt": "到期日期",
+      "finalTotal": "折后总价",
+      "orderCode": "订单编号",
+      "partner": "合作伙伴",
+      "price": "价格",
+      "quantity": "数量",
+      "service": "服务",
+      "serviceName": "服务名称",
+      "serviceType": "服务类型",
+      "status": "订单状态",
+      "time": "时间",
+      "total": "总价"
+    },
+    "modal": {
+      "detailTitle": "订单详情",
+      "serviceDetails": "服务详情"
+    },
+    "search": {
+      "clearFilter": "清除过滤",
+      "orderCodePlaceholder": "订单编号",
+      "orderDate": "下单日期",
+      "statusPlaceholder": "状态",
+      "title": "订单管理"
+    },
+    "title": "我的订单"
+  },
+  "MyProfile": {
+    "ContactInformation": {
+      "bankName": "银行名称",
+      "bankNameInCard": "账户持有人姓名",
+      "bankNumber": "银行账号",
+      "cancel": "取消",
+      "edit": "编辑",
+      "phone": "电话号码",
+      "save": "保存",
+      "selectBank": "选择银行",
+      "telegramUsername": "名称 (Telegram)",
+      "title": "联系信息",
+      "usdt": "USDT 地址",
+      "validation": {
+        "bankName": {
+          "required": "银行名称为必填项"
+        },
+        "bankNameInCard": {
+          "max": "卡上姓名不能超过50个字符",
+          "min": "卡上姓名至少需要3个字符",
+          "required": "卡上姓名为必填项"
+        },
+        "bankNumber": {
+          "invalid": "银行账号无效",
+          "required": "银行账号为必填项"
+        },
+        "phone": {
+          "invalid": "电话号码无效",
+          "required": "电话号码为必填项"
+        },
+        "telegramUsername": {
+          "invalid": "Telegram用户名无效",
+          "required": "Telegram用户名为必填项"
+        }
+      }
+    },
+    "basicInfo": {
+      "displayName": "显示名称",
+      "email": "电子邮件",
+      "role": "角色",
+      "title": "基本信息",
+      "totalBudget": "总预算",
+      "username": "用户名"
+    },
+    "common": {
+      "cancel": "取消",
+      "delete": "删除",
+      "edit": "编辑",
+      "save": "保存"
+    },
+    "contactInfo": {
+      "bankName": "银行名称",
+      "bankNameInCard": "账户持有人姓名",
+      "bankNumber": "银行账号",
+      "phone": "电话号码",
+      "selectBank": "选择银行",
+      "telegramUsername": "Telegram 用户名",
+      "title": "联系信息",
+      "usdt": "USDT 地址"
+    },
+    "copyButton": {
+      "error": "复制失败",
+      "success": "复制成功"
+    },
+    "messages": {
+      "avatarUpdateFailed": "头像更新失败",
+      "avatarUpdateSuccess": "头像更新成功",
+      "updateFailed": "信息更新失败",
+      "updateSuccess": "信息更新成功"
+    },
+    "password": {
+      "cancel": "取消",
+      "confirmPassword": "确认密码",
+      "error": "旧密码不正确",
+      "failed": "更新密码失败",
+      "newPassword": "新密码",
+      "oldPassword": "旧密码",
+      "save": "保存",
+      "success": "更新密码成功",
+      "title": "更新密码"
+    },
+    "seoerStatistic": {
+      "title": "SEOer 统计",
+      "totalSpent": "已下单总金额"
+    },
+    "title": "个人信息",
+    "update": {
+      "error": "更新信息失败",
+      "success": "更新信息成功"
+    }
+  },
+  "Order": {
+    "cancel": "取消",
+    "changeStatus": "更改状态成功",
+    "confirm": "确认",
+    "updatePriceAdjustment": "调整价格",
+    "updateStatus": "更新状态",
+    "viewDetails": "查看详情"
+  },
+  "OrderHistory": {
+    "actions": {
+      "collapse": "收起",
+      "expand": "查看详情"
+    },
+    "descriptions": {
+      "CHANGE_STATUS": "状态从 {before} 更改为 {after}",
+      "CREATE_ORDER": "订单创建成功",
+      "PRICE_ADJUSTMENT": "价格从 {before} 调整为 {after}",
+      "REMOVE_ORDER_DETAIL": "订单详情已删除"
+    },
+    "empty": {
+      "message": "此订单尚未记录任何活动",
+      "title": "暂无历史记录"
+    },
+    "labels": {
+      "priceAdjustFrom": "价格从",
+      "statusChangeFrom": "状态从",
+      "to": "更改为"
+    },
+    "loading": "正在加载历史记录...",
+    "pagination": {
+      "activities": "活动",
+      "showing": "显示 {start} - {end} 共 {total} 条结果"
+    },
+    "title": "订单历史",
+    "types": {
+      "CHANGE_STATUS": "更改状态",
+      "CREATE_ORDER": "创建订单",
+      "PRICE_ADJUSTMENT": "价格调整",
+      "REMOVE_ORDER_DETAIL": "删除订单详情"
+    }
+  },
+  "OrderModal": {
+    "buttons": {
+      "cancel": "取消",
+      "confirm": "确认"
+    },
+    "fields": {
+      "anchorText1": "锚文本1",
+      "anchorText2": "锚文本2",
+      "discount": "折扣",
+      "expiredAt": "到期日期",
+      "finalTotal": "折扣后总价",
+      "linkDrive": "网盘链接",
+      "newOrRenew": "新购或续费",
+      "orderAt": "下单时间",
+      "price": "价格",
+      "quantity": "数量",
+      "serviceName": "服务名称",
+      "serviceType": "服务类型",
+      "totalPrice": "总价",
+      "url1": "网址1",
+      "url2": "网址2",
+      "warrantyPeriod": "保修期"
+    },
+    "title": "下单",
+    "validation": {
+      "anchorText1Required": "请输入锚文本1",
+      "anchorText2Required": "请输入锚文本2",
+      "invalidUrl": "无效的URL",
+      "invalidUrlFormat": "URL格式不正确",
+      "url1Required": "请输入网址1",
+      "url2Required": "请输入网址2"
+    }
+  },
+  "Orders": {
+    "columns": {
+      "actions": "操作",
+      "discount": "折扣",
+      "domainName": "域名",
+      "orderCode": "订单号",
+      "price": "价格",
+      "priceAdjustment": "价格调整",
+      "quantity": "数量",
+      "serviceName": "服务名称",
+      "serviceType": "服务类型",
+      "status": "状态",
+      "team": "团队",
+      "totalPrice": "总价",
+      "userOrder": "下单人",
+      "username": "用户名"
+    },
+    "deleteConfirm": {
+      "error": "订单删除失败",
+      "message": "您确定要删除此订单吗？",
+      "success": "订单删除成功",
+      "title": "确认删除"
+    },
+    "detail": {
+      "serviceDetails": "服务详情",
+      "title": "订单详情"
+    },
+    "filters": {
+      "clearFilters": "清除筛选",
+      "dateRange": "时间范围",
+      "status": "状态"
+    },
+    "list": "列表",
+    "messages": {
+      "changeStatusFailure": "状态更改失败",
+      "changeStatusSuccess": "状态更改成功"
+    },
+    "order": "订单",
+    "search": {
+      "filterByTeam": "按团队筛选...",
+      "orderCodePlaceholder": "订单号..."
+    },
+    "summary": {
+      "totalApprovedCost": "总费用"
+    },
+    "table": {
+      "noData": "未找到订单"
+    },
+    "title": "订单管理"
+  },
+  "Pack": {
+    "addCart": {
+      "actions": {
+        "addToCart": "添加到购物车",
+        "cancel": "取消"
+      },
+      "complimentary": {
+        "title": "赠送服务"
+      },
+      "errors": {
+        "invalidQuantity": "请输入有效的数量",
+        "systemOverload": "系统过载"
+      },
+      "quantity": {
+        "positive": "数量必须大于0",
+        "required": "请输入数量"
+      },
+      "serviceInfo": {
+        "name": "服务名称：",
+        "price": "价格：",
+        "quantity": "数量：",
+        "title": "服务信息",
+        "type": "服务类型："
+      },
+      "title": "添加服务到购物车",
+      "total": {
+        "discount": "折扣：",
+        "total": "总金额："
+      }
+    },
+    "columns": {
+      "actions": "操作",
+      "demoLink": "演示链接",
+      "discount": "折扣",
+      "final": "折后价",
+      "name": "套餐名称",
+      "note": "备注",
+      "partner": "合作伙伴",
+      "price": "价格",
+      "serviceType": "服务类型"
+    },
+    "createEdit": {
+      "buttons": {
+        "cancel": "取消",
+        "submit": "立即发布"
+      },
+      "createTitle": "添加新服务包",
+      "editTitle": "编辑服务包",
+      "labels": {
+        "addComplimentary": "添加赠送服务",
+        "bannerDuration": "期限",
+        "bannerNote": "备注",
+        "bannerPrice": "价格",
+        "bannerPriceNew": "新价格",
+        "complimentary": "赠送服务",
+        "demoUrl": "演示链接",
+        "discount": "折扣",
+        "discountAmount": "折扣金额",
+        "discountBanner": "折扣",
+        "discountBannerAmount": "折扣金额",
+        "discountBannerService": "折扣",
+        "discountBannerServiceAmount": "折扣金额",
+        "discountGuestPost": "折扣",
+        "discountGuestPostAmount": "折扣金额",
+        "discountGuestPostService": "折扣",
+        "discountGuestPostServiceAmount": "折扣金额",
+        "discountTextLink": "折扣",
+        "discountTextLinkAmount": "折扣金额",
+        "discountTextLinkService": "折扣",
+        "discountTextLinkServiceAmount": "折扣金额",
+        "dofollowBanner": "是否需要关注",
+        "dofollowTextLink": "是否需要关注",
+        "footerTextLink": "是否需要页脚",
+        "guestPostNote": "备注",
+        "guestPostPrice": "价格",
+        "guestPostPriceNew": "新价格",
+        "homeTextLink": "是否需要首页",
+        "indexBanner": "是否需要首页",
+        "indexGuestPost": "是否需要首页",
+        "indexTextLink": "是否需要首页",
+        "isFollowGuestPost": "是否需要关注",
+        "isFollowTextLink": "是否需要关注",
+        "isFooterTextLink": "是否需要页脚",
+        "isHomeTextLink": "是否需要首页",
+        "isIndexBanner": "是否需要首页",
+        "isIndexGuestPost": "是否需要首页",
+        "isIndexTextLink": "是否需要首页",
+        "name": "包名",
+        "newPrice": "新价格",
+        "noIndexBanner": "是否不需要首页",
+        "noIndexGuestPost": "是否不需要首页",
+        "noIndexTextLink": "是否不需要首页",
+        "nofollowBanner": "是否需要关注",
+        "nofollowGuestPost": "是否需要关注",
+        "nofollowTextLink": "是否需要关注",
+        "note": "备注",
+        "price": "价格",
+        "serviceType": "服务类型",
+        "showOnMarket": "在平台上显示",
+        "textLinkDuration": "期限",
+        "textLinkNote": "备注",
+        "textLinkPriceNew": "新价格"
+      },
+      "messages": {
+        "createSuccess": "创建服务包成功",
+        "serverError": "服务器错误",
+        "updateSuccess": "更新服务包成功"
+      },
+      "validation": {
+        "complimentaryRequired": "请输入赠送服务名称。",
+        "demoRequired": "请输入演示链接。",
+        "discountMax": "折扣金额不得大于原价",
+        "discountMaxPrice": "折扣金额不得超过",
+        "discountMin": "折扣金额必须 >= 0",
+        "nameRequired": "请输入服务包名称。",
+        "priceInvalid": "请输入有效价格",
+        "priceMax": "价格不得超过",
+        "priceMin": "价格必须 >= 0",
+        "priceRequired": "请输入价格",
+        "typeRequired": "请选择服务包类型。"
+      }
+    },
+    "detail": {
+      "title": "服务套餐详情"
+    },
+    "price": {
+      "discount": "折扣:",
+      "final": "折后价:",
+      "original": "原价:"
+    },
+    "search": {
+      "button": "注册服务包",
+      "clearFilter": "清除筛选",
+      "partner": "合作伙伴",
+      "placeholder": "输入服务包名称...",
+      "service": "服务",
+      "serviceStatus": "服务状态",
+      "serviceType": "服务类型",
+      "status": "状态",
+      "title": "搜索服务包"
+    },
+    "title": "服务套餐"
+  },
+  "Partner": {
+    "addCart": {
+      "actions": {
+        "addToCart": "添加到购物车",
+        "cancel": "取消"
+      },
+      "complimentary": {
+        "title": "赠送服务"
+      },
+      "errors": {
+        "invalidQuantity": "请输入有效的数量",
+        "systemOverload": "系统过载"
+      },
+      "quantity": {
+        "positive": "数量必须大于0",
+        "required": "请输入数量"
+      },
+      "serviceInfo": {
+        "name": "服务名称：",
+        "price": "价格：",
+        "quantity": "数量：",
+        "title": "服务信息",
+        "type": "服务类型："
+      },
+      "title": "添加服务到购物车",
+      "total": {
+        "discount": "折扣：",
+        "total": "总金额："
+      }
+    },
+    "banner": {
+      "description": "69vn marketing 作为中介帮助您在购买和销售 Guestpost 时确保您的权利，避免诈骗或反向链接在到期前被删除...",
+      "title": "Guest Post/Textlink/Banner 市场"
+    },
+    "domain": {
+      "columns": {
+        "actions": "操作",
+        "bannerPrice": "Banner 价格 (VND)",
+        "dr": "DR (Ahrefs)",
+        "guestPostPrice": "Guest Post 价格 (VND)",
+        "name": "服务名称",
+        "organicTraffic": "自然流量",
+        "partner": "合作伙伴",
+        "refDomain": "引用域名",
+        "status": "状态",
+        "textLinkPrice": "Text Link 价格 (VND)"
+      },
+      "createEdit": {
+        "buttons": {
+          "cancel": "取消",
+          "submit": "立即发布"
+        },
+        "createTitle": "添加新服务 GUESTPOST - TEXTLINK - BANNER",
+        "editTitle": "编辑域名",
+        "labels": {
+          "addComplimentary": "添加赠送服务",
+          "bannerDuration": "Banner 期限 (天)",
+          "bannerNote": "Banner 备注",
+          "bannerPrice": "Banner 价格 (VND)",
+          "bannerPriceNew": "Banner 新价格",
+          "billPaymentLink": "Link thanh toán",
+          "billPaymentLinkPlaceholder": "请输入链接支付",
+          "billPaymentLinkRequired": "请输入链接支付",
+          "complimentary": "赠送服务",
+          "deleteComplimentary": "删除赠送服务",
+          "discount": "折扣",
+          "discountAmount": "折扣金额",
+          "discountBanner": "Banner 折扣",
+          "discountBannerAmount": "Banner 折扣金额",
+          "discountBannerService": "Banner 折扣服务",
+          "discountBannerServiceAmount": "Banner 折扣金额",
+          "discountGuestPost": "Guest Post 折扣",
+          "discountGuestPostAmount": "Guest Post 折扣金额",
+          "discountGuestPostService": "Guest Post 折扣服务",
+          "discountGuestPostServiceAmount": "Guest Post 折扣金额",
+          "discountTextLink": "TextLink 折扣",
+          "discountTextLinkAmount": "TextLink 折扣金额",
+          "discountTextLinkService": "TextLink 折扣服务",
+          "discountTextLinkServiceAmount": "TextLink 折扣金额",
+          "dofollowBanner": "Banner 是否需要关注",
+          "dofollowGuestPost": "Guest Post 是否需要关注",
+          "dofollowTextLink": "TextLink 是否需要关注",
+          "domain": "输入域名",
+          "dr": "域名评级 (DR)",
+          "field": "选择领域",
+          "footerTextLink": "TextLink 是否需要页脚",
+          "guestPostNote": "Guest Post 备注",
+          "guestPostPrice": "Guest Post 价格 (VND)",
+          "guestPostPriceNew": "Guest Post 新价格",
+          "homeTextLink": "TextLink 是否需要首页",
+          "indexBanner": "Banner 是否需要首页",
+          "indexGuestPost": "Guest Post 是否需要首页",
+          "indexTextLink": "TextLink 是否需要首页",
+          "isFollowGuestPost": "Guest Post 是否需要关注",
+          "isFollowTextLink": "Text Link 是否需要关注",
+          "isFooterTextLink": "Text Link 是否需要页脚",
+          "isHomeTextLink": "Text Link 是否需要首页",
+          "isIndexBanner": "Banner 是否需要首页",
+          "isIndexGuestPost": "Guest Post 是否需要首页",
+          "linkDrive": "Link Drive",
+          "linkDriveRequired": "请输入链接驱动",
+          "newPrice": "新价格",
+          "noIndexBanner": "Banner 是否不需要首页",
+          "noIndexGuestPost": "Guest Post 是否不需要首页",
+          "noIndexTextLink": "TextLink 是否不需要首页",
+          "nofollowBanner": "Banner 是否需要关注",
+          "nofollowGuestPost": "Guest Post 是否需要关注",
+          "nofollowTextLink": "TextLink 是否需要关注",
+          "organicTraffic": "自然流量",
+          "refDomain": "引用域名",
+          "saleBanner": "销售 Banner",
+          "saleGuestPost": "销售 GuestPost",
+          "saleTextLink": "销售 TextLink",
+          "showOnMarket": "在平台上显示",
+          "textLinkDuration": "Text Link 期限 (天)",
+          "textLinkNote": "Text Link 备注",
+          "textLinkPrice": "Text Link 价格 (VND)",
+          "textLinkPriceNew": "Text Link 新价格"
+        },
+        "messages": {
+          "createSuccess": "创建服务成功",
+          "serverError": "服务器错误",
+          "updateSuccess": "更新服务成功"
+        },
+        "validation": {
+          "complimentaryRequired": "请输入赠送服务名称。",
+          "discountMax": "折扣金额不得大于原价",
+          "discountMaxPrice": "折扣金额不得超过",
+          "discountMin": "折扣金额必须 >= 0",
+          "domainInvalid": "域名无效",
+          "domainRequired": "请输入域名。",
+          "durationRequired": "请选择期限",
+          "fieldRequired": "请选择领域。",
+          "priceInvalid": "请输入有效价格",
+          "priceMax": "价格不得超过",
+          "priceMin": "价格必须 >= 0",
+          "selectService": "请至少选择一项服务进行销售。"
+        }
+      },
+      "price": {
+        "discount": "折扣:",
+        "final": "折扣后价格:",
+        "noSale": "不销售",
+        "original": "价格:"
+      },
+      "search": {
+        "button": "将网站发布到平台",
+        "clearFilter": "清除筛选",
+        "field": "领域",
+        "placeholder": "输入域名...",
+        "status": "服务状态",
+        "title": "搜索域名"
+      }
+    },
+    "note": {
+      "content1": {
+        "1": "🔥 您可以创建网站并注册以销售 GP",
+        "2": "🔥 买家直接通过电话和 Facebook 链接与卖家联系",
+        "3": "🔥 买家和卖家自愿进行交易",
+        "4": "🔥 69vn marketing 是一个连接平台，不收取任何费用。因此，我们不对买家和卖家之间发生的问题承担责任。"
+      },
+      "content2": {
+        "1": "‼ 通过个人页面检查卖家的信誉",
+        "2": "‼ 鼓励中介交易以避免 scams",
+        "3": "‼ 对于任何 scams、欺诈或不满意的服务 GP，任何人都可以在本群组中创建帖子和辩论"
+      },
+      "detailTitle": "订单详情",
+      "serviceDetails": "服务详情",
+      "title1": "备注",
+      "title2": "交易时的一些注意事项："
+    },
+    "order": {
+      "columns": {
+        "buyer": "买家",
+        "buyerTelegram": "Telegram",
+        "discount": "折扣",
+        "fieldType": "领域类型",
+        "orderCode": "订单编号",
+        "priceAdjustment": "价格调整",
+        "quantity": "数量",
+        "serviceName": "服务名称",
+        "serviceType": "服务类型",
+        "status": "订单状态",
+        "time": "时间",
+        "totalAfterDiscount": "折扣后总价"
+      },
+      "search": {
+        "button": "搜索",
+        "buyer": "买家",
+        "buyerTelegram": "Telegram",
+        "clearFilter": "清除过滤",
+        "discount": "折扣",
+        "field": "领域",
+        "fieldType": "领域类型",
+        "partner": "合作伙伴",
+        "placeholder": "输入订单编号...",
+        "priceAdjustment": "价格调整",
+        "quantity": "数量",
+        "serviceName": "服务名称",
+        "serviceType": "服务类型",
+        "status": "订单状态",
+        "time": "时间",
+        "title": "搜索订单",
+        "totalAfterDiscount": "折扣后总价"
+      },
+      "status": {
+        "cancelled": "已取消",
+        "completed": "已完成",
+        "pending": "待处理",
+        "processing": "处理中"
+      },
+      "title": "订单管理"
+    },
+    "search": {
+      "clearFilter": "清除过滤",
+      "partner": "选择合作伙伴",
+      "placeholder": "输入套餐名称...",
+      "serviceType": "服务类型",
+      "title": "搜索服务套餐"
+    }
+  },
+  "PasswordUpdate": {
+    "confirmPassword": {
+      "label": "确认密码",
+      "match": "确认密码不匹配",
+      "required": "请确认密码"
+    },
+    "newPassword": {
+      "label": "新密码",
+      "minLength": "密码长度至少为8个字符",
+      "pattern": "密码必须包含至少1个大写字母、1个小写字母、1个数字和1个特殊字符",
+      "required": "请输入新密码"
+    },
+    "oldPassword": {
+      "label": "旧密码",
+      "required": "请输入旧密码"
+    },
+    "save": "保存",
+    "title": "更新密码"
+  },
+  "SeoerDomain": {
+    "myDomain": {
+      "columns": {
+        "actions": "操作",
+        "assignedUser": "分配用户",
+        "budget": "预算",
+        "createdAt": "创建日期",
+        "domainName": "域名",
+        "status": "状态",
+        "type": "类型"
+      },
+      "search": {
+        "clearFilter": "清除过滤",
+        "placeholder": "输入域名...",
+        "status": "域名状态"
+      },
+      "title": "搜索域名"
+    },
+    "services": {
+      "addCart": {
+        "addToCart": "添加到购物车",
+        "cancel": "取消",
+        "discount": "折扣:",
+        "total": "总金额:"
+      },
+      "columns": {
+        "actions": "操作",
+        "da": "DA",
+        "domainName": "域名",
+        "dr": "DR",
+        "fieldType": "领域",
+        "name": "服务名称",
+        "note": "备注",
+        "partner": "合作伙伴",
+        "price": "价格",
+        "serviceType": "服务类型",
+        "traffic": "流量"
+      },
+      "detail": {
+        "serviceDetails": "服务详情",
+        "title": "服务详情"
+      },
+      "pricing": {
+        "bannerPrice": "Banner 价格",
+        "discount": "折扣:",
+        "final": "折后价:",
+        "guestPostPrice": "Guest Post 价格",
+        "original": "价格:",
+        "packPrice": "Pack 价格",
+        "textLinkPrice": "Text Link 价格"
+      },
+      "search": {
+        "clearFilter": "清除过滤",
+        "fieldType": "领域",
+        "partner": "选择供应商",
+        "placeholder": "输入域名...",
+        "serviceType": "服务类型"
+      },
+      "title": "搜索域名"
+    }
+  },
+  "Service": {
+    "actions": {
+      "viewDetails": "查看详情"
+    },
+    "errors": {
+      "changeStatusFailure": "状态更改失败"
+    },
+    "messages": {
+      "changeStatusSuccess": "状态更改成功"
+    },
+    "modal": {
+      "changeStatus": {
+        "cancel": "取消",
+        "confirm": "确认",
+        "message": "您确定要更改此状态吗？",
+        "title": "确认更改状态"
+      }
+    },
+    "status": {
+      "approved": "已批准",
+      "cancelled": "已取消",
+      "completed": "已完成",
+      "pending": "待处理",
+      "rejected": "已拒绝"
+    }
+  },
+  "ServiceManagement": {
+    "columns": {
+      "createdAt": "创建日期",
+      "name": "服务名称",
+      "partner": "合作伙伴",
+      "price": "价格",
+      "status": "状态",
+      "type": "类型"
+    },
+    "modal": {
+      "title": "服务详情"
+    },
+    "noData": {
+      "title": "未找到服务"
+    },
+    "price": {
+      "discount": "折扣：",
+      "final": "折扣后价格：",
+      "original": "价格："
+    },
+    "search": {
+      "clearFilter": "清除筛选",
+      "partner": "选择供应商",
+      "placeholder": "搜索服务",
+      "serviceType": "服务类型",
+      "status": "状态"
+    },
+    "serviceTypes": {
+      "banner": "横幅广告",
+      "gp": "客座文章",
+      "textlink": "文本链接"
+    }
+  },
+  "Teams": {
+    "actions": {
+      "deleteTeam": "删除团队",
+      "editTeam": "编辑团队"
+    },
+    "addButton": "添加团队",
+    "columns": {
+      "action": "操作",
+      "createdAt": "创建日期",
+      "description": "描述",
+      "leaders": "领导者",
+      "memberCount": "成员数量",
+      "name": "团队名称",
+      "noLeaders": "暂无领导者"
+    },
+    "confirmDelete": {
+      "message": "您确定要删除团队\"{name}\"吗？此操作无法撤销。",
+      "title": "确认删除"
+    },
+    "createEdit": {
+      "buttons": {
+        "addLeaderButton": "添加领导者/副领导者",
+        "addMember": "添加成员",
+        "addMemberButton": "添加成员",
+        "cancel": "取消",
+        "createTeam": "创建团队",
+        "save": "保存",
+        "update": "更新",
+        "updateTeam": "更新团队"
+      },
+      "createTitle": "创建新团队",
+      "editTitle": "编辑团队",
+      "fields": {
+        "basicInfo": "基本信息",
+        "description": "描述",
+        "selectRole": "选择角色",
+        "teamMembers": "团队成员",
+        "teamName": "团队名称"
+      },
+      "messages": {
+        "addMemberInstruction": "使用添加成员或添加领导者/副领导者按钮添加成员",
+        "clickAddMember": "点击\"添加成员\"来添加团队成员",
+        "createError": "创建团队时出错",
+        "createSuccess": "团队创建成功",
+        "currentMembers": "当前成员",
+        "errorLoadingTeam": "加载团队数据出错，请重试。",
+        "loading": "加载团队数据中...",
+        "noMembers": "尚未添加成员",
+        "noTeamData": "未找到团队数据。",
+        "removeMemberError": "移除成员时出错",
+        "removeMemberSuccess": "移除成员成功",
+        "updateError": "更新团队时出错",
+        "updateRoleError": "更新角色时出错",
+        "updateRoleSuccess": "角色更新成功",
+        "updateSuccess": "团队更新成功"
+      },
+      "placeholders": {
+        "description": "输入团队描述",
+        "teamName": "输入团队名称"
+      },
+      "validation": {
+        "descriptionRequired": "描述是必需的",
+        "invalidRole": "该用户角色无效",
+        "membersRequired": "请至少添加一个成员",
+        "nameRequired": "团队名称是必需的"
+      }
+    },
+    "messages": {
+      "deleteError": "团队删除失败",
+      "deleteSuccess": "团队删除成功"
+    },
+    "modal": {
+      "addMember": {
+        "addMemberError": "添加成员时出错",
+        "addMemberSuccess": "添加成员成功",
+        "addToTeam": "添加成员",
+        "cancel": "取消",
+        "memberInfo": "已选择成员信息：",
+        "searchLeader": "按姓名或邮箱搜索领导者/副领导者...",
+        "searchSeoer": "按姓名或邮箱搜索SEOER...",
+        "selectFullInfo": "请选择完整信息",
+        "selectRole": "选择角色",
+        "systemRole": "系统角色：",
+        "teamRole": "团队角色：",
+        "titleLeader": "添加领导者/副领导者",
+        "titleMember": "添加成员"
+      },
+      "deleteMember": {
+        "message": "您确定要从团队中删除此成员吗？",
+        "title": "确认删除成员"
+      }
+    },
+    "noData": {
+      "title": "未找到团队"
+    },
+    "pagination": {
+      "totalItems": "共 {count} 个团队"
+    },
+    "search": {
+      "placeholder": "搜索团队..."
+    },
+    "teamDetail": {
+      "messages": {
+        "assignError": "分配域名失败",
+        "assignSuccess": "分配域名成功！",
+        "unassignError": "移除域名失败",
+        "unassignSuccess": "移除域名成功！"
+      },
+      "modal": {
+        "assignButton": "分配",
+        "assigningButton": "分配中...",
+        "availableDomains": "可用域名",
+        "budgetLabel": "预算:",
+        "currentlyAssigned": "已分配域名",
+        "loadingDomains": "加载域名中...",
+        "noAvailableDomains": "无可用域名分配",
+        "noDomainAssigned": "未分配任何域名",
+        "notAvailable": "不可用",
+        "removeButton": "移除",
+        "removingButton": "移除中...",
+        "subtitle": "为此成员分配/取消分配域名",
+        "title": "为 {username} 管理域名"
+      },
+      "page": {
+        "backToTeams": "返回团队列表",
+        "goBack": "返回",
+        "loadingTeam": "加载中...",
+        "subtitle": "管理成员并为团队分配域名",
+        "teamMembers": "团队成员",
+        "teamNotFound": "未找到团队",
+        "teamNotFoundDescription": "您要查找的团队不存在或您无权访问。",
+        "title": "管理团队成员"
+      },
+      "search": {
+        "placeholder": "搜索成员..."
+      },
+      "table": {
+        "actions": "操作",
+        "assignedDomains": "已分配域名",
+        "manageDomains": "管理域名",
+        "member": "成员",
+        "noDomainsAssigned": "未分配域名",
+        "role": "角色",
+        "totalMembers": "共 {count} 位成员"
+      }
+    },
+    "title": "列表 团队"
+  },
+  "User": {
+    "addButton": "添加用户",
+    "columns": {
+      "actions": "操作",
+      "createdAt": "创建日期",
+      "email": "电子邮件",
+      "role": "角色",
+      "username": "用户名"
+    },
+    "noData": {
+      "title": "未找到用户"
+    },
+    "search": {
+      "placeholder": "搜索用户"
+    },
+    "title": "用户管理"
+  },
+  "UserDetail": {
+    "title": "用户详情"
+  },
+  "UserDomain": {
+    "addDomain": "添加域名",
+    "columns": {
+      "budget": "预算",
+      "createdAt": "创建日期",
+      "domainName": "域名",
+      "domainType": "域名类型",
+      "status": "状态",
+      "userName": "用户名"
+    },
+    "noData": {
+      "message": "",
+      "title": "暂无域名"
+    },
+    "title": "用户域名列表"
+  },
+  "Users": {
+    "buttons": {
+      "cancel": "取消",
+      "clearFilter": "清除筛选",
+      "delete": "删除",
+      "edit": "编辑",
+      "save": "保存"
+    },
+    "columns": {
+      "account": "用户名",
+      "actions": "操作",
+      "createdAt": "创建日期",
+      "role": "角色",
+      "totalBudget": "总预算"
+    },
+    "roles": {
+      "partner": "合作伙伴",
+      "seoer": "SEOer",
+      "superAdmin": "超级管理员"
+    },
+    "title": "用户管理"
+  },
+  "actionStatusOrder": {
+    "CANCELLED_BY_MANAGER": "管理员取消",
+    "CANCELLED_BY_SEOER": "SEOER取消订单",
+    "COMPLETED_BY_PARTNER": "NCC完成",
+    "CONFIRMED_BY_PARTNER": "NCC确认",
+    "CONFIRMED_BY_TEAM_LEADER": "TT/TP确认",
+    "CONFIRMED_COMPLETION_BY_SEOER": "SEOer确认完成",
+    "PAID_BY_MANAGER": "TL已支付",
+    "PAYMENT_APPROVED_BY_MANAGER": "TL批准支付",
+    "REJECTED_BY_TEAM_LEADER": "TT/TP拒绝",
+    "SEOER_ORDER": "创建订单"
+  },
+  "comment": {
+    "cancel": "取消",
+    "createCommentError": "创建评论时出错",
+    "remove": "删除",
+    "reply": "回复",
+    "submit": "发送",
+    "uploadImageError": "上传图片失败",
+    "validate": {
+      "required": "请输入评论内容"
+    },
+    "writeComment": "写评论..."
+  },
+  "common": {
+    "addToCart": "添加到购物车",
+    "cancel": "取消",
+    "changeStatus": "状态更改成功",
+    "clearFilter": "清除筛选",
+    "confirm": "确认",
+    "dateRange": {
+      "endDate": "结束日期",
+      "startDate": "开始日期"
+    },
+    "delete": "删除",
+    "deleteConfirmMessage": "您确定要删除此项吗？",
+    "deleteConfirmTitle": "确认删除",
+    "deleteError": "删除购物车信息时发生错误！",
+    "deleteSuccess": "删除购物车信息成功！",
+    "edit": "编辑",
+    "success": {
+      "changeStatus": "状态更改成功"
+    },
+    "updatePrice": "更新价格"
+  },
+  "domainStatus": {
+    "AUDIT": "审计",
+    "BUYING": "购买中",
+    "CANCEL_BUY": "取消购买",
+    "DIE": "已死亡",
+    "DNS": "域名解析",
+    "PURCHASED": "已购买",
+    "REQUEST_BUY": "购买请求",
+    "SATELLITE": "卫星",
+    "SEOING": "SEO中",
+    "STOPPED": "已停止"
+  },
+  "role": {
+    "ADMIN": "管理员",
+    "ASSISTANT": "助手",
+    "DIRECTOR": "总监",
+    "GUEST": "访客",
+    "MANAGER": "经理",
+    "PARTNER": "合作伙伴",
+    "PRESIDENT": "总裁",
+    "SEOER": "SEOer",
+    "SUPER_ADMIN": "超级管理员",
+    "TEAM_LEADER": "团队领导",
+    "TEAM_MEMBER": "团队成员",
+    "USER": "用户",
+    "VICE_PRESIDENT": "副总裁",
+    "VICE_TEAM_LEADER": "副团队领导"
+  },
+  "serviceFieldType": {
+    "BUSINESS": "商业",
+    "GENERAL": "综合",
+    "SPORT": "体育",
+    "TECHNICAL": "技术"
+  },
+  "sidebar": {
+    "accessDenied": "您无权访问此页面",
+    "admin": "管理员",
+    "domain": "域名",
+    "domainsTitle": "列表 域名",
+    "list": "列表",
+    "myTeam": "我的团队",
+    "order": "订单",
+    "ordersTitle": "列表 订单",
+    "partner": {
+      "domain": "您的域名",
+      "orders": "订单管理",
+      "packages": "服务包列表"
+    },
+    "seoer": {
+      "myDomain": "我的域名",
+      "myOrders": "我的订单",
+      "packs": "流量/反向链接/实体",
+      "services": "GP/文本链接/横幅"
+    },
+    "service": "服务",
+    "statistics": "统计",
+    "teamMembers": "团队成员",
+    "teams": "团队",
+    "teamsTitle": "列表 团队",
+    "users": "用户"
+  },
+  "statistics": {
+    "approvedMoney": "已批准金额",
+    "expenseByOrderStatus": "按订单状态的费用",
+    "expenseByOrderStatusTeam1New": "按订单状态的费用（团队1新）",
+    "filter": {
+      "apply": "应用",
+      "customDateRange": "自定义日期范围",
+      "lastMonth": "上月",
+      "lastWeek": "上周",
+      "month": "月份",
+      "monthYear": "选择具体月份/年份",
+      "noFilter": "无",
+      "searchFrom": "搜索结果从",
+      "selectMonth": "选择月份",
+      "selectYear": "选择年份",
+      "thisMonth": "本月",
+      "thisWeek": "本周",
+      "timeRange": "时间范围",
+      "title": "统计筛选器",
+      "to": "到",
+      "year": "年份"
+    },
+    "moneyByStatus": "金额状态统计",
+    "noData": "暂无数据",
+    "pendingMoney": "待支付金额",
+    "quantity": "数量",
+    "rejectedMoney": "已拒绝金额",
+    "totalDomain": "总域名",
+    "totalMoney": "总金额",
+    "totalMoneyByStatus": "金额状态统计",
+    "totalMoneyVND": "总金额 (VND)",
+    "totalOrder": "总订单",
+    "totalService": "总服务",
+    "expenseByDomainBranch": "按品牌统计费用"
+  },
+  "statusOrder": {
+    "CANCELLED_BY_MANAGER": "管理员取消",
+    "CANCELLED_BY_SEOER": "SEOER取消订单",
+    "COMPLETED_BY_PARTNER": "NCC完成",
+    "CONFIRMED_BY_PARTNER": "NCC确认",
+    "CONFIRMED_BY_TEAM_LEADER": "TT/TP确认",
+    "CONFIRMED_COMPLETION_BY_SEOER": "SEOer确认完成",
+    "PAID_BY_MANAGER": "TL已支付",
+    "PAYMENT_APPROVED_BY_MANAGER": "TL批准支付",
+    "REJECTED_BY_TEAM_LEADER": "TT/TP拒绝",
+    "SEOER_ORDER": "创建订单",
+    "cancel": "取消",
+    "changeStatus": "状态更改成功",
+    "confirm": "确认",
+    "viewDetails": "查看详情"
+  },
+  "statusService": {
+    "APPROVED": "已批准",
+    "PENDING": "待处理",
+    "REJECTED": "已拒绝"
+  }
+}

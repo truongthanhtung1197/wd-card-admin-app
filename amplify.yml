@@ -1,0 +1,19 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - yarn install
+    build:
+      commands:
+        - if [ "${AWS_BRANCH}" = "develop" ]; then cp .env.development .env.production.local; fi
+        - if [ "${AWS_BRANCH}" = "master" ]; then cp .env.production .env.production.local; fi
+        - yarn run build
+  artifacts:
+    baseDirectory: .next
+    files:
+      - "**/*"
+  cache:
+    paths:
+      - .next/cache/**/*
+      - node_modules/**/*
