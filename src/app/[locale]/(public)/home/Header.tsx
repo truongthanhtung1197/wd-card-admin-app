@@ -10,11 +10,10 @@ import ClearCacheButton from "@/app/_components/common/DevTools/ClearCacheButton
 import LanguageSwitcher from "@/app/_components/LanguageSwitcher";
 import { LocaleLink } from "@/app/_components/LocaleLink";
 import { ROUTERS } from "@/constant";
-import { ADMIN_ROLE } from "@/constant/admin.constant";
 import { useLocaleRouter } from "@/hook/useLocaleRouter";
 import { AuthSelector } from "@/store/Auth";
 
-import { getInitScreenByRole } from "../auth/login/Login.logic";
+import { getInitScreenByRoleWd } from "../auth/login/Login.logic";
 
 import "aos/dist/aos.css";
 import AOS from "aos";
@@ -46,6 +45,7 @@ const navItems = [
 ];
 
 export default function Header() {
+  // header trang chưa login
   const t = useTranslations("Header");
 
   useEffect(() => {
@@ -62,6 +62,8 @@ export default function Header() {
   const auth = useSelector(AuthSelector.selectAuthState);
   const isLogin = !!Cookies.get("accessToken");
 
+  console.log("isLogin =>", isLogin);
+
   return (
     <header className="fixed left-0 top-0 z-50 w-full bg-[#f7f5f0] shadow-sm">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
@@ -70,9 +72,8 @@ export default function Header() {
           href="/"
           className="font-pacifico text-3xl font-bold text-brand-primary"
         >
-          {t("logo")}
+          Wedding Day
         </LocaleLink>
-
         {/* Desktop Menu */}
         <nav className="relative hidden md:block">
           <ul className="flex space-x-8">
@@ -117,7 +118,6 @@ export default function Header() {
             ))}
           </ul>
         </nav>
-
         <div className="row gap-4">
           <LanguageSwitcher />
 
@@ -126,15 +126,11 @@ export default function Header() {
             <div className="flex justify-center gap-4">
               <ShinyButton
                 onClick={() =>
-                  router.push(
-                    getInitScreenByRole(
-                      auth?.admin?.role?.roleName as ADMIN_ROLE,
-                    ),
-                  )
+                  router.push(getInitScreenByRoleWd(auth?.admin?.userRoles))
                 }
                 className="rounded-full bg-brand-primary px-6 py-2 text-white"
               >
-                {t("auth.dashboard")}
+                Bảng điều khiển
               </ShinyButton>
             </div>
           ) : (
@@ -149,7 +145,6 @@ export default function Header() {
           )}
           <ClearCacheButton />
         </div>
-
         {/* Mobile Menu Button */}
         <button
           className="block text-2xl text-gray-800 md:hidden"

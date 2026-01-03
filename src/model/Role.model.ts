@@ -1,5 +1,3 @@
-import { TeamModulePermission } from "@/constant/Permission.constant";
-
 import { GetListResponse } from "./Common.model";
 import { PermissionModule } from "./Permission.model";
 
@@ -16,6 +14,7 @@ export const RoleStatusOptions = Object.values(RoleStatus).map((status) => ({
 }));
 
 export interface Role {
+  // bỏ
   id: number;
   createdAt: Date;
   updatedAt: Date;
@@ -34,15 +33,12 @@ export interface TeamRole {
   createdBy: string | null;
   updatedAt: string;
   updatedBy: string | null;
-  teamRolePermissions: TeamRolePermission;
   team: {
     id: string;
     teamName: string;
   };
   permissionModules: PermissionModule[];
 }
-
-export type TeamRolePermission = typeof TeamModulePermission;
 
 export interface RoleCreateForm {
   role?: {

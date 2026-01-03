@@ -3,15 +3,25 @@ import React, { memo } from "react";
 import { Divider, Textarea, TextAreaProps } from "@nextui-org/react";
 
 import { Field, FieldInputProps, FieldMetaProps, FormikProps } from "formik";
+import { cn } from "@/utils/common.util";
 
-const defaultClassNames = {
-  // innerWrapper: "!items-center",
-  inputWrapper:
-    "bg-white border border-neutral-stroke-light hover:!border-brand-primary active:!border-brand-primary px-5 py-[10px] font-quicksand min-h-[68px] shadow-none group-data-[focus=true]:!border-brand-primary group-data-[disabled=true]:bg-neutral-on-surface-2",
-  label: "text-neutral-element-secondary font-medium text-base font-quicksand z-0",
-  input: "font-quicksand font-medium text-base leading-[18px]",
-  errorMessage: "text-sm font-medium text-accent-error",
-  helperWrapper: "!p-0",
+const getDefaultClassNames = ({
+  inputWrapperClassName,
+}: {
+  inputWrapperClassName?: string;
+}) => {
+  return {
+    // innerWrapper: "!items-center",
+    inputWrapper: cn(
+      "bg-white border border-neutral-stroke-light hover:!border-brand-primary active:!border-brand-primary px-5 py-[10px] font-quicksand min-h-[68px] shadow-none group-data-[focus=true]:!border-brand-primary group-data-[disabled=true]:bg-neutral-on-surface-2",
+      inputWrapperClassName,
+    ),
+    label:
+      "text-neutral-element-secondary font-medium text-base font-quicksand z-0",
+    input: "font-quicksand font-medium text-base leading-[18px] min-h-[350px]",
+    errorMessage: "text-sm font-medium text-accent-error",
+    helperWrapper: "!p-0",
+  };
 };
 
 export interface MyFieldProps {
@@ -30,13 +40,15 @@ export interface MyInputProps extends TextAreaProps {
   editable?: boolean;
   isDivider?: boolean;
   wrapperClassName?: string;
+  inputWrapperClassName?: string;
 }
 const TextareaInput = memo(
   ({
     isClear = false,
     editable = true,
     isDivider = false,
-    classNames = defaultClassNames,
+    classNames,
+    inputWrapperClassName,
     wrapperClassName,
     ...props
   }: MyInputProps) => {
@@ -72,7 +84,7 @@ const TextareaInput = memo(
                 autoComplete="new-password"
                 color="primary"
                 variant="bordered"
-                classNames={classNames}
+                classNames={getDefaultClassNames({ inputWrapperClassName })}
                 isInvalid={!!(meta.touched && meta.error)}
                 errorMessage={meta.error}
               />

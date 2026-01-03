@@ -9,7 +9,6 @@ import {
   DOMAIN_STATUS_OPTIONS,
   DOMAIN_TYPE_OPTIONS,
 } from "@/constant/domain.constant";
-import { PermissionEnum } from "@/constant/Permission.constant";
 import { useAppSelector } from "@/store";
 import {
   useGetDomainsOfAllMyTeamQuery,
@@ -20,7 +19,6 @@ import {
   useGetTeamsQuery,
 } from "@/store/Apis/Team.api";
 import { AuthSelector } from "@/store/Auth/Auth.redux";
-import { checkPermission } from "@/utils/auth.utils";
 import { formatCurrency, formatDateTime } from "@/utils/format.util";
 import { getLabelFromOptions } from "@/utils/loan.utils";
 import { createColumnHelper } from "@tanstack/react-table";
@@ -311,10 +309,6 @@ const useAdminLogic = () => {
     setTeamsLimit,
     teamsSearch,
     setTeamsSearch,
-    isCanEdit: checkPermission({
-      permission: {},
-      accessKeys: [PermissionEnum.USER_MGMT_EDIT],
-    }),
   };
 };
 

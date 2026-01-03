@@ -1,5 +1,5 @@
 import { GetListResponse, User69vn } from "@/model";
-import { Admin, AdminResponse, CreateAdmin } from "@/model/Admin.mode";
+import { Admin, AdminResponse, CreateAdmin, Role } from "@/model/Admin.mode";
 import { createApi } from "@reduxjs/toolkit/query/react";
 
 import { covertObjectToSearchParams } from "./Api.util";
@@ -22,7 +22,7 @@ export const adminSlice = createApi({
       {
         page: number;
         limit: number;
-        role?: any;
+        roles?: string[];
         search?: string;
         sortBy?: string;
         sortOrder?: string;
@@ -85,7 +85,7 @@ export const adminSlice = createApi({
         };
       },
     }),
-    getRoles: builder.query<any, void>({
+    getRoles: builder.query<GetListResponse<Role>, void>({
       query: () => {
         return {
           url: "/roles",

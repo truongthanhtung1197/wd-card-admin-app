@@ -1,16 +1,15 @@
-import { RolePermission } from "@/model";
 import { Admin } from "@/model/Admin.mode";
 import { ValidateLoginOTPResponse } from "@/store/Apis/Api.type";
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
+import { ADMIN_ROLE } from "@/constant/admin.constant";
 import { RootState } from "..";
 
 const initialState = {
   id: "",
   email: "",
-  roles: [] as string[],
   admin: null as null | Admin,
-  rolePermission: null as null | RolePermission,
+  roles: null as null | ADMIN_ROLE[],
   accessToken: null as null | string,
   refreshToken: null as null | string,
 };
@@ -41,7 +40,6 @@ const authSlice = createSlice({
       state.refreshToken = action.payload.refreshToken;
     },
     setAdmin: (state, action: PayloadAction<Admin>) => {
-      
       state.admin = action.payload;
     },
     logout: (state) => {
@@ -50,7 +48,6 @@ const authSlice = createSlice({
       state.email = "";
       state.roles = [];
       state.admin = null;
-      state.rolePermission = null;
     },
   },
 });

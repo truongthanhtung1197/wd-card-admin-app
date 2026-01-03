@@ -1,10 +1,9 @@
-/* eslint-disable simple-import-sort/imports */
-import { io, Socket } from "socket.io-client";
-
 import type {
   INotification,
   NotificationResponse,
 } from "@/model/Notification.model";
+
+import { io, Socket } from "socket.io-client";
 
 export type NotificationInitCallback = (items: INotification[]) => void;
 export type NotificationItemCallback = (item: INotification) => void;

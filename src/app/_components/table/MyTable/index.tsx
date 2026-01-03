@@ -117,53 +117,70 @@ function MyTable({
           )}
         >
           {fetching && (
-            <div className="center absolute inset-0">
-              <Loading />
-            </div>
+            <tr>
+              <td
+                colSpan={columns.length}
+                className="center relative h-[300px] w-full"
+              >
+                <div className="center absolute inset-0">
+                  <Loading />
+                </div>
+              </td>
+            </tr>
           )}
 
-          {table.getRowModel().rows.map((row) => {
-            return (
-              <tr
-                key={row.id}
-                className={cn(
-                  "transition-all duration-200 hover:bg-neutral-on-surface-1a",
-                  rowSelection?.[row.id] && "!bg-brand-super-light",
-                  getRowClassName?.(row?.original),
-                )}
-              >
-                {row.getVisibleCells().map((cell) => {
-                  return (
-                    <td
-                      style={{
-                        width: cell.column.getSize(),
-                      }}
-                      key={cell.id}
-                      className={cn(
-                        "border-r border-t border-neutral-stroke-light p-4 align-top text-base font-medium text-primary",
-                        // Default to nowrap unless overridden by meta className
-                        !cell?.column?.columnDef?.meta?.className?.includes("break-words") && "whitespace-nowrap",
-                        cell?.column?.columnDef?.meta?.className,
-                        onRowClick &&
-                          !cell?.column?.columnDef?.meta?.disableRowClick &&
-                          "cursor-pointer",
-                      )}
-                      onClick={() => handleRowClick(cell)}
-                    >
-                      {flexRender(
-                        cell.column.columnDef.cell,
-                        cell.getContext(),
-                      )}
-                    </td>
-                  );
-                })}
-              </tr>
-            );
-          })}
+          {!fetching &&
+            table.getRowModel().rows.map((row) => {
+              return (
+                <tr
+                  key={row.id}
+                  className={cn(
+                    "transition-all duration-200 hover:bg-neutral-on-surface-1a",
+                    rowSelection?.[row.id] && "!bg-brand-super-light",
+                    getRowClassName?.(row?.original),
+                  )}
+                >
+                  {row.getVisibleCells().map((cell) => {
+                    return (
+                      <td
+                        style={{
+                          width: cell.column.getSize(),
+                        }}
+                        key={cell.id}
+                        className={cn(
+                          "border-r border-t border-neutral-stroke-light p-4 align-top text-base font-medium text-primary",
+                          // Default to nowrap unless overridden by meta className
+                          !cell?.column?.columnDef?.meta?.className?.includes(
+                            "break-words",
+                          ) && "whitespace-nowrap",
+                          cell?.column?.columnDef?.meta?.className,
+                          onRowClick &&
+                            !cell?.column?.columnDef?.meta?.disableRowClick &&
+                            "cursor-pointer",
+                        )}
+                        onClick={() => handleRowClick(cell)}
+                      >
+                        {flexRender(
+                          cell.column.columnDef.cell,
+                          cell.getContext(),
+                        )}
+                      </td>
+                    );
+                  })}
+                </tr>
+              );
+            })}
           {tableBody}
-          {!data?.length &&
-            !fetching &&
-            (TableNoData ? TableNoData : <NoData {...NoDataProps} />)}
+          {!data?.length && !fetching && (
+            <tr>
+              <td
+                colSpan={columns.length}
+                className="relative h-[300px] w-full"
+              >
+                {TableNoData ? TableNoData : <NoData {...NoDataProps} />}
+              </td>
+            </tr>
+          )}
         </tbody>
       </table>
     </div>

@@ -16,6 +16,7 @@ import { teamSlice } from "./Apis/Team.api";
 import { userSlice } from "./Apis/User.api";
 import { userDomainSlice } from "./Apis/UserDomain.api";
 import { userReviewSlice } from "./Apis/UserReview.api";
+import { packageSlice } from "./Apis/Package.api";
 import { AuthReducer } from "./Auth/Auth.redux";
 import { CommonReducer } from "./common/common.redux";
 import { persistConfig } from "./Store.persist";
@@ -51,6 +52,7 @@ const rootReducer = combineReducers({
   [teamSlice.reducerPath]: teamSlice.reducer,
   [userDomainSlice.reducerPath]: userDomainSlice.reducer,
   [notificationSlice.reducerPath]: notificationSlice.reducer,
+  [packageSlice.reducerPath]: packageSlice.reducer,
 });
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
@@ -79,6 +81,7 @@ const store = configureStore({
         teamSlice.middleware,
         userDomainSlice.middleware,
         notificationSlice.middleware,
+        packageSlice.middleware,
       ],
     ),
 });

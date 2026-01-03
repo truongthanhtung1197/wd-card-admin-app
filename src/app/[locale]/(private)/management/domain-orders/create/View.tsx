@@ -61,7 +61,6 @@ const CreateAdminView = () => {
           {(props: FormikProps<any>) => {
             const { values, validateField, errors, setFieldValue } = props;
 
-            console.log({ errors });
             return (
               <form className="col relative w-full gap-5">
                 <div className="!rounded-lg border-[0.5px] border-neutral-stroke-light bg-white p-5">

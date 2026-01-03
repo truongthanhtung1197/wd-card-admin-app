@@ -1,7 +1,5 @@
 import { USER_STATUS_ENUM } from "@/constant";
-import { PermissionEnum } from "@/constant/Permission.constant";
 
-import { AgentCmsCommon } from "./AgentCms.model";
 import { GetListResponse, TimeStamp } from "./Common.model";
 import { Role } from "./Role.model";
 
@@ -25,13 +23,11 @@ export interface User extends TimeStamp {
   resetPasswordDefault?: boolean;
   updatedBy?: string;
   role?: UserRole;
-  userCmsCommon?: AgentCmsCommon;
   userRoles?: {
     roleId?: string;
     userId?: string;
     role?: Role;
   }[];
-  rolePermission?: RolePermission | null;
   teamMembers?: TeamMember[];
   fileId?: string;
   fileRelations?: any;
@@ -76,11 +72,8 @@ export interface TeamMember {
   teamId: string;
 }
 
-export type RolePermission = {
-  [key: string]: PermissionEnum;
-};
-
 export interface UserRole {
+  // bỏ
   roleName: string;
   status: string;
   description: string;

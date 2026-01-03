@@ -1,10 +1,4 @@
 export const ROUTERS = {
-  VERIFY_OTP: "",
-  FORGOT_PASSWORD: "",
-  RESET_PASSWORD: " ",
-  RESET_PASSWORD_SUCCESS: "",
-  RESET_PASSWORD_FAILED: "",
-  DASHBOARD: "",
   REGISTER: "/auth/register",
 
   //TODO ROUTER
@@ -22,74 +16,6 @@ export const ROUTERS = {
   SEO_ORDER: "/seoer/order",
   SEO_MY_CART: "/seoer/my-cart",
   SEO_MY_ORDER: "/seoer/my-order",
-
-  USER_PACIFICWIDE_PAGE: "",
-  USER_CUSTOM_SITE: "",
-
-  USER_DETAIL_OF_TEAM: "",
-
-  // condition
-  DOC_CONDITION_LIST: "",
-  DOC_CONDITION_CREATE: "",
-  DOC_CONDITION_DETAIL: "",
-
-  // lead
-  LEAD: "",
-  LEAD_RECENT_DELETE: "",
-  LEAD_CREATE: "",
-  LEAD_DETAIL: "",
-  LEAD_EDIT: "",
-  LEAD_CREATE_MULTIPLE: "",
-
-  // loan
-  LOAN: "",
-  USER_CREATE_MULTIPLE: "",
-  LOAN_CREATE: "",
-  LOAN_IMPORT_MISMO: "",
-  LOAN_DETAIL_APLICATION: "",
-  LOAN_DETAIL_APLICATION_LOAN_INFO: "",
-  LOAN_DETAIL_APLICATION_EXPENSE: "",
-  LOAN_DETAIL_APLICATION_TRANSACTION_DETAILS: "",
-  LOAN_DETAIL_APLICATION_BORROWER: "",
-  LOAN_DETAIL_MESSAGE: "",
-  LOAN_DETAIL_DOCUMENT: "",
-  LOAN_DETAIL_NOTE: "",
-  LOAN_DETAIL_ASSIGNMENTS: "",
-  LOAN_DETAIL_CONDITIONS: "",
-
-  // team
-  TEAM_ACTIVE: "",
-  TEAM_INACTIVE: "",
-  TEAM: "",
-  TEAM_CREATE: "",
-  TEAM_EDIT: "",
-  TEAM_DETAIL: "",
-  TEAM_DETAIL_PERMISSION: "",
-  TEAM_PACIFICWIDE_PAGE: "",
-  TEAM_CUSTOM_SITE: "",
-
-  // my team
-  MY_TEAM: "",
-  MY_TEAM_DETAIL: "",
-  MY_TEAM_PACIFICWIDE_PAGE: "",
-  MY_TEAM_CUSTOM_SITE: "",
-  MY_TEAM_CREATE_ROLE: "",
-  MY_TEAM_ROLE_DETAIL: "",
-
-  // role and permission
-  ROLE_LIST: "",
-  PERMISSION_LIST: "",
-  ROLE_DETAIL: "",
-  TEAM_ROLE_DETAIL: "",
-  ROLE_CREATE: "",
-  TEAM_ROLE_CREATE: "",
-
-  // tag
-  TAG: "",
-
-  //accounts management
-  ACCOUNTS_LIST: "",
-  ACCOUNTS_DETAIL: "",
 
   // -------------------69 vn--------------------
   HOME: "/#",
@@ -119,9 +45,17 @@ export const ROUTERS = {
 
   ORDER_DETAIL: "/order-detail/:id",
 
-  // -------------crm-------------
+  // -------------wd-------------
 
   MANAGEMENT_ADMIN: "/management/admins",
+  MANAGEMENT_USERS: "/management/users",
+
+  MANAGEMENT_PACKAGES: "/management/packages",
+  MANAGEMENT_PACKAGE_EDIT: "/management/packages/create-edit/:id",
+  MANAGEMENT_PACKAGE_CREATE: "/management/packages/create-edit/create",
+
+  // -------------end wd-------------
+
   MANAGEMENT_ADMIN_DETAIL: "/management/admins/detail/:id",
   MANAGEMENT_ADMIN_EDIT: "/management/admins/edit/:id",
   MANAGEMENT_ADMIN_CREATE: "/management/admins/create",

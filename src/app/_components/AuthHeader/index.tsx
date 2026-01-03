@@ -24,7 +24,6 @@ import {
 
 import AvatarV2 from "../common/AvatarV2";
 import CartIcon from "../icons/CartIcon";
-import LanguageSwitcher from "../LanguageSwitcher";
 import { getSideBar } from "../layout/SetupLayout/setup.constant";
 import { LocaleLink } from "../LocaleLink";
 import NotificationComponent from "./NotificationComponent";
@@ -42,18 +41,13 @@ const AuthHeader = () => {
   }, []);
   const router = useLocaleRouter();
 
-  const [activeSubmenu, setActiveSubmenu] = useState<number | null>(null); // Quản lý submenu active
-
   const handleConfirmLogout = () => {
-    // Use enhanced clear function that clears everything
     clearAllAuthData();
 
-    // Force navigate to login with full page reload to clear all cache
     const currentLocale = getCurrentLocale();
     window.location.href = `/${currentLocale}/auth/login`;
   };
 
-  // Helper function to get current locale
   const getCurrentLocale = () => {
     const pathname = window.location.pathname;
     const match = pathname.match(/^\/([a-zA-Z-]{2,5})(?=\/|$)/);
@@ -107,7 +101,7 @@ const AuthHeader = () => {
           href="/"
           className="font-pacifico text-3xl font-bold text-brand-primary"
         >
-          SEO MARKET
+          Wedding Day
         </LocaleLink>
       </NavbarBrand>
       <NavbarContent
@@ -115,22 +109,8 @@ const AuthHeader = () => {
         className="inline-flex h-20 items-center justify-center gap-6 px-10"
       >
         {dataSideBar?.map((item, i) => (
-          <div
-            key={i}
-            className="group relative"
-            onMouseEnter={() => setActiveSubmenu(i)} // Hiển thị submenu khi hover vào tab cha
-            onMouseLeave={() => setActiveSubmenu(null)} // Ẩn submenu khi hover ra ngoài
-          >
-            <NavbarItem
-              isActive={
-                pathname.includes(item.link) ||
-                (item.children &&
-                  item.children.some((child: any) =>
-                    pathname.includes(child.link),
-                  ))
-              }
-              className="relative flex flex-col items-center"
-            >
+          <div key={i} className="group relative">
+            <NavbarItem className="relative flex flex-col items-center">
               <LocaleLink
                 href={item.link || "#"}
                 className={twMerge(
@@ -151,32 +131,6 @@ const AuthHeader = () => {
                 <span className="absolute bottom-0 h-0.5 w-4/5 translate-y-2 rounded-full bg-brand-primary"></span>
               )}
             </NavbarItem>
-            {/* Submenu nếu có */}
-            {item?.children?.length > 0 && item?.children?.text ? (
-              <div
-                className={`absolute left-1/2 top-full z-50 w-56 -translate-x-1/2 flex-col rounded-md bg-white p-2 shadow-lg ${activeSubmenu === i ? "block" : "hidden"}`}
-              >
-                {item.children.map((child: any, idx: number) => {
-                  // Only render the child if text is not empty
-                  if (child.text !== "") {
-                    return (
-                      <LocaleLink
-                        key={idx}
-                        href={child.link}
-                        className={twMerge(
-                          "block px-4 py-2 text-sm text-gray-700",
-                          pathname.endsWith(child.link) &&
-                            "text-brand-primary underline",
-                        )}
-                      >
-                        {child.text}
-                      </LocaleLink>
-                    );
-                  }
-                  return null; // Skip rendering if the text is empty
-                })}
-              </div>
-            ) : null}
           </div>
         ))}
       </NavbarContent>
@@ -205,13 +159,7 @@ const AuthHeader = () => {
             </span>
           </motion.div>
         )}
-        <LanguageSwitcher />
-        {/* notification feature  */}
-        <NotificationComponent />
-        {/* <div className="relative mr-4 cursor-pointer">
-          <FaRegBell className="h-6 w-6 text-gray-600" />
-          <span className="absolute -right-1 -top-1 h-2.5 w-2.5 rounded-full border-2 border-white bg-red-500"></span>
-        </div> */}
+        {/* <NotificationComponent /> */}
         <Dropdown placement="bottom-end">
           <DropdownTrigger>
             <button

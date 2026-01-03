@@ -1,13 +1,5 @@
-import { useEffect } from "react";
 import { usePathname } from "next/navigation";
 
-import {
-  getAccessDeniedRedirect,
-  hasRouteAccess,
-} from "@/constant/role-routes";
-import { removeLocalePrefix } from "@/i18n/routing";
-
-import { useAuthGuard } from "./useAuthGuard";
 import { useLocaleRouter } from "./useLocaleRouter";
 
 /**
@@ -15,34 +7,25 @@ import { useLocaleRouter } from "./useLocaleRouter";
  * Checks both authentication and authorization
  */
 export const useRoleGuard = () => {
-  const { user, isLoading, isError, error, isAuthenticated } = useAuthGuard();
+  // const { data, error, isLoading, isError } = useGetMeQuery({});
+
   const pathname = usePathname();
   const router = useLocaleRouter();
 
-  useEffect(() => {
-    // Only check authorization after authentication is confirmed
-    if (!isLoading && isAuthenticated && user) {
-      const pathWithoutLocale = removeLocalePrefix(pathname);
-      const userRole = user?.role?.roleName;
+  // useEffect(() => {
+  //   // Only check authorization after authentication is confirmed
+  //   if (!isLoading && isAuthenticated && user) {
+  //     const pathWithoutLocale = removeLocalePrefix(pathname);
+  //     const userRole = user?.role?.roleName;
 
-      // Check if user has access to current route
-      if (!hasRouteAccess(pathWithoutLocale, userRole)) {
-        // Redirect to appropriate page based on user role
-        const redirectPath = getAccessDeniedRedirect(userRole);
-        router.push(redirectPath);
-      }
-    }
-  }, [isLoading, isAuthenticated, user, pathname, router]);
+  //     // Check if user has access to current route
+  //     if (!hasRouteAccess(pathWithoutLocale, userRole)) {
+  //       // Redirect to appropriate page based on user role
+  //       const redirectPath = getAccessDeniedRedirect(userRole);
+  //       router.push(redirectPath);
+  //     }
+  //   }
+  // }, [isLoading, isAuthenticated, user, pathname, router]);
 
-  return {
-    user,
-    isLoading,
-    isError,
-    error,
-    isAuthenticated,
-    hasAccess:
-      isAuthenticated && user
-        ? hasRouteAccess(removeLocalePrefix(pathname), user?.role?.roleName)
-        : false,
-  };
+  return {};
 };

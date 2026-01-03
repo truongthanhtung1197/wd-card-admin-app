@@ -12,6 +12,8 @@ import { useLocaleRouter } from "@/hook/useLocaleRouter";
 
 import FilterAdmin from "../_components/FilterAdmin";
 import { useAdminLogic } from "./logic";
+import MyMultipleSelect from "@/app/_components/form/MyMultipleSelect";
+import { ADMIN_ROLE_OPTIONS } from "@/constant/admin.constant";
 
 const AdminView = () => {
   const { data, fetching, total, columns } = useAdminLogic();
@@ -21,13 +23,20 @@ const AdminView = () => {
 
   return (
     <>
-       <SetupSubHeader label={`${tSidebar("list")} ${tSidebar("admin")}`} />
+      <SetupSubHeader label={`${tSidebar("list")} ${tSidebar("admin")}`} />
       <div className="col mb-4 gap-4 rounded-lg border border-neutral-stroke-bold bg-white p-4">
         <div className="flex justify-between gap-2">
-          <SearchInput
-            className="h-[44px] !w-[500px]"
-            placeholder={t("search.placeholder")}
-          />
+          <div className="flex gap-2">
+            <SearchInput
+              className="h-[44px] !w-[500px]"
+              placeholder={t("search.placeholder")}
+            />
+            <MyMultipleSelect
+              options={ADMIN_ROLE_OPTIONS}
+              param="role"
+              selectCheckboxItemClassName="lowercase first-letter:uppercase"
+            />
+          </div>
           {/* {isCanEdit && ( */}
           {true && (
             <MyButton

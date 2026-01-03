@@ -1,4 +1,4 @@
-import React, { memo } from "react";
+import { memo } from "react";
 import PhoneInput from "react-phone-input-2";
 
 import { CustomErrorMessage } from "../../common/CustomErrorMessage";

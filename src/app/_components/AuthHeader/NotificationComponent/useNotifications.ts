@@ -1,18 +1,18 @@
-/* eslint-disable simple-import-sort/imports */
 "use client";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
 import { INotification } from "@/model/Notification.model";
 import { useAppSelector } from "@/store";
-import { AuthSelector } from "@/store/Auth";
 import {
   useGetNotificationsQuery,
   useMarkAllAsReadMutation,
   useMarkAsReadMutation,
 } from "@/store/Apis/Notification.api";
-import Cookies from "js-cookie";
+import { AuthSelector } from "@/store/Auth";
 
 import { connectNotifications } from "./utils";
+
+import Cookies from "js-cookie";
 
 export type FetchParams = {
   page: number;

@@ -1,7 +1,7 @@
 "use client";
 import React, { ReactNode } from "react";
-import dynamic from "next/dynamic";
 import { Provider } from "react-redux";
+import dynamic from "next/dynamic";
 
 import { store } from "@/store";
 

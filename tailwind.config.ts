@@ -1,8 +1,9 @@
 import { nextui } from "@nextui-org/theme";
+
 import type { Config } from "tailwindcss";
 
 // Import styleConfig with explicit .ts extension for Next.js 16 Turbopack
-// eslint-disable-next-line @typescript-eslint/no-require-imports
+// eslint-disable-next-line
 const styleConfig = require("./styleConfig.ts");
 const { backgroundColors, borders, colors } = styleConfig;
 

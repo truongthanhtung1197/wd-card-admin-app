@@ -5,12 +5,13 @@ import { toast } from "@/app/_components/common/Toaster";
 import { ROUTERS } from "@/constant";
 import { ADMIN_ROLE } from "@/constant/admin.constant";
 import { useLocaleRouter } from "@/hook/useLocaleRouter";
-import { Admin } from "@/model/Admin.mode";
+import { Admin, UserRole } from "@/model/Admin.mode";
 import { GlobalDispatch } from "@/store";
 import { useLoginMutation } from "@/store/Apis/Auth.api";
 import { AuthActions } from "@/store/Auth/Auth.redux";
 
 import Cookies from "js-cookie";
+import { isNilOrEmpty } from "ramda-adjunct";
 
 export const LOGIN_EMAIL_KEY = "loginEmail";
 export const MAX_ATTEMPTS = 5;
@@ -44,23 +45,23 @@ export const useLogic = () => {
           Cookies.set("refreshToken", res.data?.access_token, {
             expires: expiresDays,
           });
-          Cookies.set("role", res.data?.data?.role?.roleName, {
-            expires: expiresDays,
-          });
-
+          console.log(res.data?.data);
           GlobalDispatch(
             AuthActions.verifyOTPSuccess({
               data: {
                 admin: res.data?.data as Admin,
                 accessToken: res.data?.access_token,
                 refreshToken: res.data?.access_token,
+                roles:
+                  res.data?.data?.userRoles?.map(
+                    (role: UserRole) => role.role?.roleName,
+                  ) || [],
               },
             }),
           );
 
           // Get target route
-          const targetRoute =
-            from || getInitScreenByRole(res.data?.data?.role?.roleName);
+          const targetRoute = from || getInitScreenByRole(res.data?.data?.role);
 
           // Get current locale for proper URL construction
           const currentLocale = getCurrentLocale();
@@ -113,4 +114,20 @@ export const getInitScreenByRole = (role: ADMIN_ROLE) => {
     default:
       return ROUTERS.HOME;
   }
+};
+
+export const getInitScreenByRoleWd = (roles?: UserRole[] | null) => {
+  if (isNilOrEmpty(roles)) {
+    return ROUTERS.HOME;
+  }
+  const roleNames = roles?.map((role) => role?.role?.roleName);
+
+  // if (roleNames?.includes(ADMIN_ROLE.SUPER_ADMIN)) {
+  //   return ROUTERS.MANAGEMENT_STATISTICS;
+  // }
+  // if (roleNames?.includes(ADMIN_ROLE.MANAGER)) {
+  //   return ROUTERS.MANAGEMENT_ADMIN;
+  // }
+
+  return ROUTERS.MANAGEMENT_ADMIN;
 };

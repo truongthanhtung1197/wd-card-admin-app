@@ -1,18 +1,17 @@
-/* eslint-disable simple-import-sort/imports */
 import React, { memo, useCallback, useEffect, useRef, useState } from "react";
-import { Popover, PopoverContent, PopoverTrigger } from "@nextui-org/react";
 
-import EmptyState from "../../icons/EmptyState";
 import LetterAvatar from "@/app/_components/common/LetterAvatar/LetterAvatar";
 import { NotificationIcon } from "@/app/_components/icons/NotificationIcon";
-import { useNotifications } from "./useNotifications";
-import { INotification, NOTIFICATION_TYPE } from "@/model/Notification.model";
-
-import { cn, getImageUrl, getUserName } from "@/utils/common.util";
-import { timeFromNow } from "@/utils/format.util";
-import AvatarV2 from "../../common/AvatarV2";
 import { ROUTERS } from "@/constant";
 import { useLocaleRouter } from "@/hook/useLocaleRouter";
+import { INotification, NOTIFICATION_TYPE } from "@/model/Notification.model";
+import { cn, getImageUrl, getUserName } from "@/utils/common.util";
+import { timeFromNow } from "@/utils/format.util";
+import { Popover, PopoverContent, PopoverTrigger } from "@nextui-org/react";
+
+import AvatarV2 from "../../common/AvatarV2";
+import EmptyState from "../../icons/EmptyState";
+import { useNotifications } from "./useNotifications";
 
 const NotificationComponent = memo(() => {
   const router = useLocaleRouter();

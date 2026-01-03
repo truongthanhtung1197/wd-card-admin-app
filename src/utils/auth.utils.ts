@@ -4,7 +4,6 @@ import { defaultLocale, LOCALES } from "@/i18n/routing";
 import { GlobalDispatch } from "@/store";
 import { AuthActions } from "@/store/Auth";
 
-import Cookies from "js-cookie";
 import { AnyObject } from "yup";
 
 /**
@@ -34,12 +33,7 @@ function getCurrentLocale(): string {
 export function clearAllAuthData() {
   try {
     GlobalDispatch(AuthActions.logout());
-    Cookies.remove("accessToken");
-    Cookies.remove("refreshToken");
-    Cookies.remove("role");
-  } catch (error) {
-    console.error("Error clearing auth data:", error);
-  }
+  } catch (error) {}
 }
 
 /**
@@ -111,4 +105,16 @@ export function checkPermission69VN({
   permission?: Permission69VN[];
 }): boolean {
   return true;
+}
+
+export function checkRole({
+  userRoles,
+  allowRoles,
+}: {
+  userRoles: ADMIN_ROLE[] | null;
+  allowRoles: ADMIN_ROLE[] | null;
+}) {
+  if (!userRoles) return false;
+  if (!allowRoles) return false;
+  return userRoles.some((role) => allowRoles.includes(role));
 }

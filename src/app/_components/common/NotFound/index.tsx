@@ -1,6 +1,5 @@
 "use client";
 
-
 import NotFoundBg from "@/app/_components/icons/not-found-page/404-page.png";
 import AstronautIcon from "@/app/_components/icons/not-found-page/Astronaut";
 import BigVectorIcon from "@/app/_components/icons/not-found-page/BigVector";
@@ -32,7 +31,7 @@ const NotFound = () => {
             {`The page you are looking for doesn't exist.`}
           </p>
         </div>
-        <LocaleLink href={ROUTERS.DASHBOARD}>
+        <LocaleLink href={ROUTERS.HOME}>
           <MyButton className="!px-4">Go to home page</MyButton>
         </LocaleLink>
       </div>
